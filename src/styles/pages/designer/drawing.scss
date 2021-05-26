@@ -1,0 +1,128 @@
+.drawing-board {
+  height: 100%;
+  position: relative;
+  .components-body {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+  }
+  .sortable-ghost {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    &::before {
+      content: " ";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 3px;
+      background: rgba(darken($main-bg, 10%), 0.3);
+      z-index: 2;
+    }
+  }
+}
+
+.drawing-item {
+  &.unfocus-bordered:not(.active-from-item) > div:first-child {
+    border: 1px dashed #ccc;
+  }
+  .el-form-item {
+    padding: 8px;
+  }
+}
+
+.drawing-row-item {
+  box-sizing: border-box;
+  border: 1px dashed #ccc;
+  border-radius: 3px;
+  padding: 2px;
+  margin-bottom: 15px;
+  &.el-row {
+    margin: 0 !important; // HACK:
+  }
+  .drawing-row-item {
+    margin-bottom: 2px;
+  }
+  .el-col {
+    margin-top: 20px;
+  }
+  .el-form-item {
+    margin-bottom: 0;
+  }
+  .drag-wrapper {
+    min-height: 80px;
+  }
+  .component-name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 1.5;
+    font-size: 12px;
+    color: #bbb;
+    padding: 0 6px;
+  }
+}
+.drawing-item,
+.drawing-row-item {
+  position: relative;
+  cursor: move;
+  & > .drawing-item-copy,
+  & > .drawing-item-delete {
+    display: none;
+    position: absolute;
+    top: -10px;
+    width: 22px;
+    height: 22px;
+    margin: 0;
+    z-index: 1000;
+    min-width: unset;
+  }
+  & > .drawing-item-copy {
+    right: 39px;
+  }
+  & > .drawing-item-delete {
+    right: 10px;
+  }
+
+  &:hover,
+  &.active-from-item {
+    border-radius: 3px;
+    background: rgba(darken($main-bg, 10%), 0.3);
+    & > .el-form-item {
+      border-radius: 6px;
+    }
+    & > .drawing-item-copy,
+    & > .drawing-item-delete {
+      display: initial;
+    }
+  }
+
+  &.active-from-item {
+    border: 1px dashed $main-color;
+    & > .component-name {
+      color: $main-color;
+    }
+  }
+}
+
+// HACK:
+.drawing-board {
+  .el-tabs {
+    background: $--tab-item-bg-color;
+  }
+}
+.drawing-row-item {
+  $extendTop: 20px;
+  .table-top-btn-warp {
+    &.toggle-more {
+      max-height: $--input-height + $extendTop;
+      &.show-more {
+        max-height: 1000px;
+      }
+    }
+    .toggle-more-btn {
+      top: $extendTop;
+    }
+  }
+}

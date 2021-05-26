@@ -1,0 +1,17 @@
+/* 弹窗 */
+.el-message-box {
+    &__title {
+        text-align: center;
+    }
+
+    &__btns {
+        text-align: center;
+
+        // 把默认的 button--small 效果换成 button--medium + 圆角效果
+        button {
+            padding: $--button-medium-padding-vertical $--button-medium-padding-horizontal;
+            font-size: $--button-medium-font-size;
+            border-radius: 100px;
+        }
+    }
+}

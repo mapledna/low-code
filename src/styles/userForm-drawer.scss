@@ -1,0 +1,46 @@
+$editorTabsborderColor: #121315;
+// $editorTabsHeight: 32px;
+
+.user-form{
+  width:100%;
+  height: 100%;
+  .user-form-wrapper{
+    position: relative;
+    width:100%;
+    height:100%;
+    padding-bottom:60px;
+    box-sizing: border-box;
+  }
+  .parser-wrapper{
+    width:100%;
+    height: 100%;
+    
+    .result-wrapper {
+      position: relative;
+      width: 100%;
+      height:100%;
+      box-sizing: border-box;
+      padding: 5px;
+      iframe{
+        width: 600px;
+        height: 100%;
+        position: relative;
+        margin-left: -300px;
+        left: 50%;
+      }
+    }
+    .result-loading-warp {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+  }
+  .user-form-btn{
+    position: absolute;
+    bottom:20px;
+    left:50%;
+
+  }
+}

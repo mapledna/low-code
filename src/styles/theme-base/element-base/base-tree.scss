@@ -1,0 +1,20 @@
+$tree-node-height: 26px !default; 
+
+.el-tree {
+  overflow-x: hidden;
+}
+.el-tree-node__content {
+  height: $tree-node-height;
+  line-height: $tree-node-height;
+}
+.el-tree-node > .el-tree-node__children{
+  overflow: initial;
+}
+.el-tree-node__content > span:nth-child(2) {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  &.is-disabled{
+    color: $--disabled-color-base;
+  }
+}

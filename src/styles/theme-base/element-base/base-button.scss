@@ -1,0 +1,19 @@
+/* 按钮尺寸 */
+.el-button {
+  max-width: 100%; // HACK: 避免设置了宽度，导致按钮超出栅格
+}
+
+/* 按钮间距 */
+.el-button + .el-button {
+  margin-left: $--size-inline-block;
+}
+
+.el-button [class*="el-icon-"],
+.el-button [class*="mdi-"] {
+  & + span {
+    margin-left: $--size-inline-block;
+  }
+  & + span:empty {
+    margin-left: 0;
+  }
+}

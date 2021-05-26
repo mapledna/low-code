@@ -1,0 +1,60 @@
+/**
+ * 布局-整体
+ */
+$--layout-padding: 20px !default;
+$--container-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1) !default;
+
+/**
+ * 布局-侧栏
+ */
+$aside-width: 256px !default;
+$aside-font-color: $--color-white !default;
+$aside-bg-color: #292C35 !default;
+// 侧栏顶部 logo 区域
+$aside-top-bg-color: $--color-primary-dark !default;
+$aside-top-height: $--header-height !default;
+
+/**
+ * 布局-侧栏菜单
+ */
+$menu-item-height: 40px !default;
+$menu-item-padding-h: 30px !default;
+$menu-font-size: 16px !default;
+$menu-padding-left: 72px !default;
+$menu-level-4-width: 208px !default;
+// 菜单文字和背景颜色
+$menu-font-color: $aside-font-color !default;
+$menu-bg-color: $aside-bg-color !default;
+$menu-hover-font-color: lighten($--color-primary, 15%) !default;
+$menu-hover-bg-color: rgba(0, 0, 0, 0.18) !default;
+$menu-open-font-color: rgba(255, 255, 255, .4) !default;
+$menu-open-bg-color: rgba(0, 0, 0, 0.18) !default;
+$menu-level-4-bg: $aside-bg-color !default;
+// 布局-菜单图标
+$menu-icon-height: 16px !default;
+$menu-icon-circle-height: 7px !default;
+$menu-icon-font-size: 28px !default;
+$menu-icon-color: #4a4a4a !default; // NOTE: ？？？没有这个颜色的图标
+// 布局-菜单左侧竖线
+$menu-bord-width: 2px !default;
+$menu-bord-color: $menu-bg-color !default;
+$menu-bord-hover-color: $--color-primary !default;
+
+/**
+ * 布局-头部
+ */
+$--header-height: 50px !default;
+$--header-title-size: 20px !default;
+$--header-title-color: #333 !default;
+$--header-bg-color: #fff !default;
+
+/**
+ * 面包屑导航
+ */
+$breadcrumb-height: $--font-line-height-base !default;
+$breadcrumb-padding-v: $--layout-padding !default;
+$breadcrumb-padding-h: $--layout-padding !default;
+$breadcrumb-font-size: $--font-size-base !default;
+$breadcrumb-font-color: $--color-text-secondary !default;
+$breadcrumb-active-font-color: $--color-primary !default;
+$breadcrumb-active-font-size: $breadcrumb-font-size !default;

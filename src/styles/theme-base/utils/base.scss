@@ -1,0 +1,32 @@
+/**
+ * 基础样式：原子类
+ */
+
+/* float */
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.clearfix {
+  @include clearfix();
+}
+
+/* display */
+.inline {
+  display: inline !important;
+}
+.inline-block {
+  display: inline-block !important;
+}
+.block {
+  display: block !important;
+}
+.hidden {
+  display: none !important;
+}
+/* border */
+.border-all {
+  border: $--border-base;
+}

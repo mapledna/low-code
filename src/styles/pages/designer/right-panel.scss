@@ -1,0 +1,49 @@
+.center-tabs {
+  .el-tabs__header {
+    margin-bottom: 0 !important;
+  }
+
+  .el-tabs__item {
+    width: 100%;
+    // width: 50%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .el-tabs__nav {
+    width: 100%;
+  }
+}
+
+.reg-item {
+  padding: 12px 6px;
+  background: #f8f8f8;
+  position: relative;
+  border-radius: 4px;
+
+  .close-btn {
+    position: absolute;
+    right: -6px;
+    top: -6px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+    cursor: pointer;
+    font-size: 12px;
+
+    &:hover {
+      background: rgba(210, 23, 23, 0.5);
+    }
+  }
+
+  & + .reg-item {
+    margin-top: 18px;
+  }
+}

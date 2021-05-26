@@ -1,0 +1,34 @@
+/* 选项卡滚动按钮 */
+$tab-scroll-btn-width: 20px !default;
+$tab-scroll-btn-font-color: $--color-primary !default;
+
+.el-tabs__nav-wrap.is-scrollable {
+    padding-left: 0;
+    padding-right: $tab-scroll-btn-width * 3;
+}
+
+.el-tabs__nav-next,
+.el-tabs__nav-prev,
+.ui-tabs-wrapper .el-dropdown-link.el-dropdown-selfdefine{
+    line-height: $--tab-header-height;
+    width: $tab-scroll-btn-width;
+    text-align: center;
+    color: $tab-scroll-btn-font-color;
+    background-color: $--tab-item-bg-color;
+    z-index: 3;
+
+    &:hover {
+        color: rgba($tab-scroll-btn-font-color, .6);
+    }
+}
+
+.el-tabs__nav-prev {
+    left: initial;
+    right: $tab-scroll-btn-width * 2;
+    box-shadow: $--container-shadow;
+}
+.el-tabs__nav-next {
+    left: initial;
+    right: $tab-scroll-btn-width;
+    box-shadow: $--container-shadow;
+}

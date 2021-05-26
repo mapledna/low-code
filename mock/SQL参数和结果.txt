@@ -1,0 +1,265 @@
+【编辑SQL参数】
+
+表单内容：
+序号: 1
+参数名称: 主键ID
+参数代码: id
+控件类型: 隐藏文本
+数据源: GetDictionary('1248882537487826946') 或者 GetData('4','label','id')
+是否必传
+是否必填
+是否ID
+验证规则:
+最小长度/值
+最小长度/值
+最大长度/值
+最大长度/值
+
+请求参数：
+{sqlId: "1255044056670253058", parameters: {id: "1356442959184527366", sql_id: "1356442959163555843"}}
+
+返回数据：
+[{
+	id: "1356442959184527366"
+	is_id: 1
+	is_not_null: 1
+	is_required: 1
+	param_max_length: null
+	param_min_length: null
+	sort_no: 1
+	sql_id: "1356442959163555843"
+	sql_param_code: "id"
+	sql_param_name: "主键ID"
+	sql_param_type: 0
+	valid_rule: null
+	value_defaults: null
+}]
+
+
+【编辑SQL结果】
+
+表单内容：
+序号: 1
+结果名称: 主键ID
+结果代码: id
+结果类型：整数
+控件类型: 隐藏文本
+数据源: 
+是否显示
+是否必填
+是否ID
+是否标签
+是否父ID
+
+请求参数：
+{sqlId: "1255080358291578883", parameters: {id: "1356442959205498891", sql_id: "1356442959163555843"}}
+
+返回数据：
+[{
+	id: "1356442959205498891"
+	is_display: 0
+	is_id: 1
+	is_label: 0
+	is_pid: 0
+	is_required: 1
+	result_code: "id"
+	result_format: null
+	result_name: "主键ID"
+	result_type: 2
+	sort_no: 1
+	sql_id: "1356442959163555843"
+	widget_type: null
+}]
+
+
+【字典-控件类型】
+
+请求参数：
+{sqlId: "1257968258652504065", parameters: {p_id: "1260815860342648833"}}
+
+返回数据：
+[{
+	"id":"0",
+	"label":"隐藏文本",
+	"selected":0
+},
+{
+	"id":"1",
+	"label":"单行文本",
+	"selected":0
+},
+{
+	"id":"2",
+	"label":"数字文本",
+	"selected":0
+},
+{
+	"id":"3",
+	"label":"密码文本",
+	"selected":0
+},
+{
+	"id":"5",
+	"label":"多行文本",
+	"selected":0
+},
+{
+	"id":"4",
+	"label":"日期选择",
+	"selected":0
+},
+{
+	"id":"6",
+	"label":"时间选择",
+	"selected":0
+},
+{
+	"id":"7",
+	"label":"日期时间",
+	"selected":0
+},
+{
+	"id":"8",
+	"label":"单选",
+	"selected":0
+},
+{
+	"id":"9",
+	"label":"复选",
+	"selected":0
+},
+{
+	"id":"10",
+	"label":"单选下拉",
+	"selected":0
+},
+{
+	"id":"11",
+	"label":"多选下拉",
+	"selected":0
+},
+{
+	"id":"12",
+	"label":"树形下拉",
+	"selected":0
+},
+{
+	"id":"13",
+	"label":"文件选择",
+	"selected":0
+},
+{
+	"id":"14",
+	"label":"颜色选择",
+	"selected":0
+},
+{
+	"id":"15",
+	"label":"图标选择",
+	"selected":0
+},
+{
+	"id":"16",
+	"label":"文本+按钮",
+	"selected":0
+}]
+
+
+【字典-是否必传】
+【字典-是否必填】
+
+请求参数：
+{sqlId: "1257968258652504065", parameters: {p_id: "1255706920988938242"}}
+
+返回数据：
+[{
+	"id":"1",
+	"label":"是",
+	"selected":0
+},
+{
+	"id":"0",
+	"label":"否",
+	"selected":0
+}]
+
+【字典-是否ID】
+
+[{
+	"id":"0",
+	"label":"非ID",
+	"selected":1
+},
+{
+	"id":"1",
+	"label":"主ID",
+	"selected":0
+},
+{
+	"id":"2",
+	"label":"父ID",
+	"selected":0
+}]
+
+
+【字典-验证规则】
+
+请求参数：
+{sqlId: "1257968258652504065", parameters: {p_id: "1260821691398287362"}}
+
+返回数据：
+[{
+	"id":"2",
+	"label":"密码",
+	"selected":0
+},
+{
+	"id":"3",
+	"label":"邮编",
+	"selected":0
+},
+{
+	"id":"4",
+	"label":"整数",
+	"selected":0
+},
+{
+	"id":"5",
+	"label":"小数",
+	"selected":0
+},
+{
+	"id":"6",
+	"label":"英文",
+	"selected":0
+},
+{
+	"id":"7",
+	"label":"汉字",
+	"selected":0
+},
+{
+	"id":"8",
+	"label":"手机",
+	"selected":0
+},
+{
+	"id":"9",
+	"label":"邮箱",
+	"selected":0
+},
+{
+	"id":"0",
+	"label":"全表唯一",
+	"selected":0
+},
+{
+	"id":"1",
+	"label":"节点唯一",
+	"selected":0
+},
+{
+	"id":"10",
+	"label":"组合唯一",
+	"selected":0
+}]

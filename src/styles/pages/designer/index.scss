@@ -1,0 +1,45 @@
+@import "@/styles/theme-base/utils";
+
+$main-color: $--color-primary;
+$main-bg: $--background-color-base;
+$action-bar-height: 40px;
+$padding: 10px;
+
+@import './components';
+@import './drawing';
+@import './header-board';
+@import './left-board';
+@import './center-board';
+@import './right-board';
+@import './right-panel';
+
+.designer_wrapper {
+  .el-scrollbar__wrap {
+      overflow-x: auto;
+      // box-sizing: border-box;
+      // margin-bottom: 0 !important;
+      // margin-right: 0 !important;
+  }
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+// .codeEditorDrawer {
+//   #el-drawer__title {
+//     margin-bottom: 12px;
+//     padding-top: 10px;
+//   }
+//   .el-drawer__body {
+//     position: relative;
+//   }
+// }
+
+/* 限制树形下拉组件弹出层的高度 */
+.el-popper .el-tree {
+  max-height: 300px;
+  overflow-y: auto;
+}

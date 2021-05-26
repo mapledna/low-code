@@ -1,0 +1,209 @@
+@import "@/styles/theme-base/utils/mixins.scss";
+
+/* 主题变量 */
+
+/* Color
+-------------------------- */
+$--color-white: #fff !default;
+$--color-black: #000 !default;
+
+$--color-primary: #009588; // 场景色
+$--color-success: #1ea664; // 肯定色
+$--color-warning: #ddbc5d; // 否决色
+$--color-danger: #ff5722; // 消极色
+$--color-info: #777; // 标题色
+
+$--color-primary-light-1: mix($--color-white, $--color-primary, 10%); //#1aa094
+$--color-primary-light-2: mix($--color-white, $--color-primary, 20%); //#33aaa0
+$--color-primary-light-3: mix($--color-white, $--color-primary, 30%); //#4db5ac
+$--color-primary-light-4: mix($--color-white, $--color-primary, 40%); //#66bfb8
+$--color-primary-light-5: mix($--color-white, $--color-primary, 50%); //#80cac4
+$--color-primary-light-6: mix($--color-white, $--color-primary, 60%); //#99d5cf
+$--color-primary-light-7: mix($--color-white, $--color-primary, 70%); //#b3dfdb
+$--color-primary-light-8: mix($--color-white, $--color-primary, 80%); //#cceae7
+$--color-primary-light-9: mix($--color-white, $--color-primary, 90%); //#e6f4f3
+
+// Font
+$--color-text-primary: #383838;
+$--color-text-regular: #666; // form-item-label 颜色
+$--color-text-secondary: #999;
+$--color-text-placeholder: #999;
+// Border
+$--border-color-base: #e6e6e6;
+$--border-color-light: $--border-color-base; //  (缺少对应设计稿)
+// Background
+$--background-color-base: #f4f4f4;
+
+/* Typography
+-------------------------- */
+$--font-path: '~element-ui/packages/theme-chalk/src/fonts';
+
+$--font-size-extra-large: 20px !default;
+$--font-size-large: 18px !default;
+$--font-size-medium: 16px !default;
+$--font-size-base: 14px !default;
+$--font-size-small: 13px !default;
+$--font-size-extra-small: 12px !default;
+
+$--font-color-disabled-base: #cfcfcf; // 应用于 $--input-color-disabled
+
+/* add Custom-Base
+--------------------------*/
+$--font-family: PingFang SC,
+Microsoft Yahei,
+Helvetica,
+sans-serif;
+$--scrollbar-width: 8px;
+$--size-default: 16px; // 默认边距
+$--container-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+
+$--font-line-height-base: 20px;
+
+
+/* add Custom-Color
+  --------------------------*/
+$--color-primary-dark: #067668 !default;
+
+$--hover-font-color: $--color-primary;
+$--hover-bg-color: $--background-color-base;
+$--current-font-color: $--color-primary;
+$--current-bg-color: $--color-primary-light-4;
+
+
+/* add Custom-Layout
+  --------------------------*/
+$--header-height: 50px !default;
+
+$--header-bg-color: $--color-white;
+$--header-title-size: $--font-size-large;
+$--header-title-color: $--color-primary-dark;
+
+$--aside-width: 200px !default;
+$--aside-bg-color: $--color-primary;
+
+$--layout-padding: $--size-default;
+$--layout-background-color-base: $--background-color-base;
+
+
+/* Border
+-------------------------- */
+$--border-width-base: 1px !default;
+$--border-style-base: solid !default;
+$--border-color-hover: #c4c4c4; // 设计稿边框 hover 颜色比正常状态深
+$--border-base: $--border-width-base $--border-style-base $--border-color-base !default;
+$--border-radius-base: 4px !default;
+$--border-radius-small: 2px !default;
+
+/* Disable base
+-------------------------- */
+$--disabled-fill-base: $--background-color-base !default;
+$--disabled-color-base: #b8b8b8; // 应用于 $--input-disabled-color。设计稿边框 disabled 颜色比正常状态深。
+$--disabled-border-base: $--border-color-light !default;
+
+/* add Custom-MessageBox
+--------------------------*/
+$--messagebox-title-font-size: $--font-size-medium !default;
+$--messagebox-header-padding-v: $--size-default * 1.5 - 0.2 * $--messagebox-title-font-size !default;
+$--messagebox-header-padding-h: $--size-default !default;
+
+/* Input
+ -------------------------- */
+$--input-font-size: $--font-size-base;
+$--input-width: 160px;
+$--input-height: 34px;
+$--input-large-font-size: $--font-size-extra-small;
+$--input-large-height: 40px;
+$--input-medium-font-size: $--font-size-base;
+$--input-medium-height: 28px; // 表单使用 medium 尺寸；表格搜索默认使用 small 的尺寸
+$--input-small-font-size: $--font-size-base;
+$--input-small-height: $--input-medium-height;
+$--input-mini-font-size: $--font-size-extra-small;
+$--input-mini-height: 20px;
+
+/* add Custom-Tab
+  --------------------------*/
+// 选项卡头部
+$--tab-header-bg-color: transparent !default; // add
+$--tab-header-height: 30px !default;
+// 选项卡头部-选项
+$--tab-item-padding-h: $--size-default !default; // add
+$--tab-item-font-color: $--color-text-regular !default; // add
+$--tab-item-bg-color: $--border-color-base !default; // add
+$--tab-item-border-width: 2px !default; // add
+$--tab-item-border-color: $--tab-item-bg-color !default; // add
+$--tab-item-active-font-color: $--color-text-primary !default; // add
+$--tab-item-active-bg-color: $--color-white !default; // add
+// 选项卡内容面板
+$--tab-pane-padding-v: 0 !default; // add
+
+/* Button
+-------------------------- */
+// height: 38px + border = $--input-height
+$--button-font-size: $--font-size-base;
+$--button-padding-vertical: 12px;
+$--button-padding-horizontal: 20px;
+
+// height: 26px + border
+$--button-medium-font-size: $--font-size-base;
+$--button-medium-padding-vertical: 6px;
+$--button-medium-padding-horizontal: 14px;
+
+// height: 18px + border
+$--button-small-font-size: $--font-size-extra-small;
+$--button-small-padding-vertical: 3px;
+$--button-small-padding-horizontal: 6px;
+$--button-small-border-radius: $--border-radius-small;
+
+// height: 16px + border (缺少对应设计稿)
+$--button-mini-font-size: $--font-size-extra-small;
+$--button-mini-padding-vertical: 2px;
+$--button-mini-padding-horizontal: 4px;
+$--button-mini-border-radius: $--border-radius-small;
+
+// $--button-info-font-color: $--color-text-primary;
+// $--button-info-background-color: #EDF1F7;
+// $--button-info-border-color: $--button-info-background-color;
+
+$--button-hover-tint-percent: 30%;
+$--button-active-shade-percent: 0;
+
+/* Dialog
+-------------------------- */
+$--dialog-background-color: $--color-white !default;
+$--dialog-box-shadow: $--container-shadow !default;
+$--dialog-title-font-size: $--font-size-medium !default;
+$--dialog-padding-primary: $--size-default !default;
+/* add Custom-Dialog
+--------------------------*/
+$--dialog-header-padding-v: $--size-default - 0.2 * $--dialog-title-font-size !default;
+$--dialog-header-padding-h: $--dialog-padding-primary !default;
+$--dialog-header-bg-color:$--color-white !default;
+
+/* add Custom-Table
+  --------------------------*/
+// header
+$--table-header-font-size: $--font-size-base !default;
+$--table-header-font-color: $--color-text-regular !default;
+$--table-header-bg-color: #f2f2f2 !default;
+// body
+$--table-row-height: 40px !default;
+$--table-row-padding-h: 8px !default;
+$--table-row-striped-bg-color: #fafafa !default;
+$--table-row-hover-bg-color: #f2f2f2 !default;
+$--table-row-current-bg-color: $--color-primary-light-9 !default;
+
+/* 基础主题变量 */
+@import "@/styles/theme-default/utils/variable.scss";
+@import "@/styles/theme-base/utils/variable.scss";
+
+/* 导出 */
+:export {
+    // color
+    color-primary: $--color-primary;
+    color-white: $--color-white;
+    // layout
+    header-height: $--header-height;
+    aside-width: $--aside-width;
+    header-bg-color: $--header-bg-color;
+    aside-bg-color: $--aside-bg-color;
+}

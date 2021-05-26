@@ -1,0 +1,36 @@
+/**
+布局结构：
+|-【page_container】
+    |- ui-main__container el-container
+        |- ui-main__aside el-aside
+        |- el-container
+            |- ui-main__header
+            |- el-main
+                |- ui-main__tabs el-tabs
+                    |- el-tabs__header 选项卡头部
+                        |- el-tabs__nav 所有选项
+                            |- el-tabs__item 单个选项
+                    |- el-tabs__content
+                        |- el-tab-pane ui-main__tab-pane 页面内容
+                            |- ui-main__breadcrumb 面包屑
+                                |- ui-main__content 页面内容
+*/
+@import "./variable";
+
+@import "./Layout";
+/**
+ * Aside
+ */
+@import "./MainAside";
+@import "./Menu";
+
+/**
+ * Header
+ */
+@import "./MainHeader";
+@import "./BreadCrumb";
+@import "./ProductDialog";
+
+/* 选项卡 */
+@import "./MainTabs";
+@import "./Content";

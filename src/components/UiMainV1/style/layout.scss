@@ -1,0 +1,86 @@
+/* 头部 */
+.ui-main__header {
+  left: auto;
+  box-shadow: none;
+  &__warp {
+    height: 0;
+  }
+  &__left {
+    display: none;
+  }
+}
+
+/* 顶部选项卡 */
+.ui-main__tabs {
+  margin-top: -50px;
+  padding: 0;
+
+  & > .el-tabs__header {
+    margin-bottom: 0;
+    background-color: $--header-bg-color;
+    border-bottom-width: 0;
+    overflow: hidden; // HACK: IE 兼容
+
+    .el-tabs__nav {
+      border-radius: 0;
+      border-top-width: 0;
+      border-left-width: 0;
+    }
+
+    .el-tabs__nav-scroll {
+      margin-right: 300px; // 略大于.ui-main__header 的宽度
+    }
+
+    .el-tabs__nav-next {
+      right: 300px;
+    }
+
+    .el-tabs__item {
+      height: $main-tabs-item-height;
+      line-height: $main-tabs-item-height;
+      padding: 0 $main-tabs-item-padding-h;
+      color: $--color-text-secondary;
+      border-left: 1px solid $main-tabs-item-active-bg-color;
+      border-radius: 0;
+      user-select: none;
+      transition: all 0.1s;
+
+      &:hover {
+        color: $--color-text-primary;
+      }
+
+      &.is-active {
+        color: $--color-text-primary;
+        background: $main-tabs-item-active-bg-color;
+        border-bottom-color: $main-tabs-item-active-bg-color;
+      }
+
+      .el-icon-close {
+        font-size: $--font-size-base;
+      }
+    }
+  }
+}
+
+/* 主体内容 */
+.ui-main__tab-pane {
+  padding: 0;
+}
+
+.ui-main__content__warp {
+  box-sizing: border-box;
+  max-height: calc(
+    100vh - #{$--header-height + $breadcrumb-padding-v * 2 + $breadcrumb-height +
+      $--layout-padding - 2}
+  );
+  margin: 0 $--layout-padding $--layout-padding;
+  padding: $--layout-padding;
+  background: $--color-white;
+  box-shadow: $--container-shadow;
+}
+
+.ui-main__aside {
+  .ui-main__logo {
+    background-color: $aside-bg-color;
+  }
+}

@@ -1,0 +1,154 @@
+$panel-zIndex: 100 !default;
+$collapse-btn-width: 35px !default;
+$collapse-btn-height: 5px !default;
+$triangle-width: $collapse-btn-height - 1 !default;
+$triangle-color: $--color-text-placeholder !default;
+$triangle-bg-color: $--background-color-base !default;
+$tool-hover-bg-color: $--color-primary-light-9 !default;
+$tool-active-bg-color: $--color-primary-light-8 !default;
+
+@mixin fullAbsolute {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.ui-layout_container {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.ui-layout_panel {
+  @include fullAbsolute();
+  z-index: $panel-zIndex;
+  overflow: auto;
+  border: $--border-base;
+
+  &.ui-layout-- {
+    &header,
+    &top {
+      bottom: auto;
+    }
+    &footer,
+    &bottom {
+      top: auto;
+    }
+    &left {
+      right: auto;
+    }
+    &right {
+      left: auto;
+    }
+    &body,
+    &center {
+      border-width: 0;
+    }
+  }
+
+  &.collapsed {
+    display: none;
+  }
+}
+
+.ui-layout_resize-bar {
+  @include fullAbsolute();
+  z-index: $panel-zIndex + 10;
+  background-color: transparent;
+  cursor: ns-resize;
+  user-select: none;
+
+  &.ui-layout-- {
+    &left,
+    &right {
+      cursor: ew-resize;
+    }
+  }
+
+  &:hover {
+    background-color: $tool-hover-bg-color;
+  }
+  &.active {
+    background-color: $tool-active-bg-color;
+  }
+}
+
+.ui-layout_collapse-btn {
+  @include fullAbsolute();
+  z-index: $panel-zIndex + 20;
+  text-align: center;
+  background-color: $triangle-bg-color;
+  border: $--border-base;
+  cursor: pointer;
+  user-select: none;
+  &:not(.collapsed) {
+    // HACK: 排除折叠的状态。否则左右面板收起时会出现多余的横向滚轴
+    margin: -1px; // 合并边框
+  }
+  &.ui-layout-- {
+    &header,
+    &footer,
+    &top,
+    &bottom {
+      width: $collapse-btn-width;
+      height: $collapse-btn-height;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &left,
+    &right {
+      width: $collapse-btn-height;
+      height: $collapse-btn-width;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  /* 箭头 */
+  .triangle {
+    @include fullAbsolute();
+    margin: auto;
+    opacity: 0.6;
+  }
+  .triangle-header,
+  .triangle-top,
+  &.collapsed .triangle-footer,
+  &.collapsed .triangle-bottom {
+    @include triangle(top, $triangle-width, $triangle-color);
+    top: auto;
+    bottom: 1px;
+  }
+  &.collapsed .triangle-header,
+  &.collapsed .triangle-top,
+  .triangle-footer,
+  .triangle-bottom {
+    @include triangle(bottom, $triangle-width, $triangle-color);
+    top: 1px;
+    bottom: auto;
+  }
+  .triangle-left,
+  &.collapsed .triangle-right {
+    @include triangle(left, $triangle-width, $triangle-color);
+    left: auto;
+    right: 1px;
+  }
+  &.collapsed .triangle-left,
+  .triangle-right {
+    @include triangle(right, $triangle-width, $triangle-color);
+    left: 1px;
+    right: auto;
+  }
+
+  &:hover {
+    color: mix($--color-white, $triangle-color, 20%);
+    background-color: $tool-hover-bg-color;
+  }
+  &:active {
+    color: mix($--color-black, $triangle-color, 10%);
+    background-color: $tool-active-bg-color;
+  }
+}

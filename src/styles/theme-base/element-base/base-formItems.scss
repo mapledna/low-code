@@ -1,0 +1,162 @@
+/**
+ * 表单和表单元素：
+ * 根据变量重制页面内容中的选项卡。可用于所有主题。
+ */
+
+/* 基础 */
+.el-form {
+  // NOTE: 页面上 el-col 带有左右边距，而且内容没有包 el-row。因此这里清楚浮动。
+  @include clearfix();
+  // 表单项中的文本展示
+  .form-item-text {
+    padding: 0 15px;
+  }
+}
+
+.el-select {
+  width: 100%; // HACK: 统一非行内表单元素宽度
+}
+.el-date-editor.el-input,
+.el-date-editor.el-input__inner {
+  width: 200px; // HACK: 统一行内表单元素宽度
+}
+
+.el-input,
+.el-textarea,
+.el-select,
+.el-input-number,
+.el-range-editor,
+.el-slider,
+.comboTree,
+.code-editor-warp {
+  max-width: 100% !important;
+}
+
+.el-input__inner[type='number'] {
+  padding-right: 0;
+}
+
+/* 禁用 */
+.disabled .el-form-item__label {
+  color: $--font-color-disabled-base;
+}
+
+/* 尺寸 */
+@mixin formItemSize($height, $font-size) {
+  .el-form-item__label,
+  .el-form-item__content {
+    line-height: $height;
+  }
+
+  .el-input__inner,
+  .el-select-dropdown__item {
+    font-size: $font-size;
+    height: $height;
+    line-height: $height;
+  }
+
+  .el-slider__runway {
+    margin-top: ($height - $--slider-height) / 2;
+    margin-bottom: ($height - $--slider-height) / 2;
+  }
+}
+.el-form-item {
+  &--medium {
+    @include formItemSize($--input-medium-height, $--input-medium-font-size);
+  }
+
+  &--small {
+    @include formItemSize($--input-small-height, $--input-small-font-size);
+  }
+
+  &--mini {
+    @include formItemSize($--input-mini-height, $--input-mini-font-size);
+  }
+}
+
+/* 间距 */
+.el-form-item__label {
+  padding-right: $--size-default / 2;
+}
+
+.el-form.el-form--inline {
+  margin-bottom: $--size-default - 10px;
+
+  .el-form-item {
+    margin-bottom: 10px;
+    margin-right: $--size-default;
+  }
+}
+
+/* 圆角 */
+.el-input__inner,
+.el-textarea__inner {
+  border-radius: $--border-radius-base;
+}
+
+/* 提示文字 */
+input,
+textarea {
+  &:-moz-placeholder {
+    color: $--input-placeholder-color;
+  }
+  &::-moz-placeholder {
+    color: $--input-placeholder-color;
+  }
+  &:-ms-input-placeholder {
+    color: $--input-placeholder-color;
+  }
+  &::-webkit-input-placeholder {
+    color: $--input-placeholder-color;
+  }
+}
+
+/** 
+ * HACK: 还原输入框前后的按钮样式
+ */
+@mixin inputGroupAppend($padding-h) {
+  .el-input-group__append,
+  .el-input-group__prepend {
+    padding: 0 $padding-h;
+  }
+}
+.el-input {
+  @include inputGroupAppend($--button-padding-horizontal);
+  &--medium {
+    @include inputGroupAppend($--button-medium-padding-horizontal);
+  }
+  &--small {
+    @include inputGroupAppend($--button-small-padding-horizontal);
+  }
+  &--mini {
+    @include inputGroupAppend($--button-mini-padding-horizontal);
+  }
+}
+
+.el-input-group__append,
+.el-input-group__prepend {
+  .el-button,
+  .el-select {
+    margin: 0;
+    padding: 0;
+  }
+
+  .el-button {
+    box-shadow: none;
+
+    &:hover {
+      color: $--button-info-font-color;
+      border-color: transparent;
+      background-color: transparent;
+    }
+  }
+}
+
+/* 表单插件 */
+.el-form-item {
+  .tox-tinymce,
+  .code-editor-warp {
+    border-radius: $--border-radius-base;
+    border: $--border-base;
+  }
+}

@@ -1,0 +1,14 @@
+.ui-list-picker--list-warp {
+  overflow: auto;
+  // HACK: 消除多余边距
+  & > .el-col-24 > .el-form-item {
+    margin-bottom: 0;
+  }
+}
+.ui-list-picker--btn-warp {
+  text-align: right;
+  padding-top: $--popover-padding;
+  .el-button {
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,30 @@
+.custom-tree-node {
+    width: 100%;
+    font-size: 14px;
+
+    .node-operation {
+        float: right;
+    }
+
+    i[class*="el-icon"]+i[class*="el-icon"] {
+        margin-left: 6px;
+    }
+
+    .el-icon-plus {
+        color: #409EFF;
+    }
+
+    .el-icon-delete {
+        color: #157a0c;
+    }
+}
+
+.el-rate {
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.el-upload__tip {
+    line-height: 1.2;
+    margin-left: .5em;
+}

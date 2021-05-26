@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="renderer" content="webkit">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link href="<%= BASE_URL %>libs/vue.2.6.10.min.js" rel="preload" as="script" />
+    <style >
+      body{
+        margin: 0;
+        padding: 0; /* 减少iframe滚动条 */
+        overflow-x: hidden;
+        height: 100%;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>欢迎访问XXXXX</strong>
+    </noscript>
+    <div id="previewApp" class="theme-default"></div>
+    <script> 
+      // TODO: 需要删除。同时需要修改 js.js。并保存所以页面
+      var baseUrl = 'http://10.1.21.3:10002/#/show/';
+      var publishType = '';
+    </script>
+    <script src="<%= BASE_URL %>libs/vue.2.6.10.min.js"></script>
+  </body>
+</html>

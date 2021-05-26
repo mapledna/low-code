@@ -1,0 +1,48 @@
+.left-board {
+  width: 260px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+
+  .logo {
+    position: absolute;
+    left: 12px;
+    top: 5px;
+    line-height: 30px;
+    color: $main-color;
+    font-weight: 600;
+    font-size: 17px;
+    white-space: nowrap;
+    img.logo_img {
+      width: 30px;
+      height: 30px;
+      vertical-align: top;
+    }
+    .github {
+      display: inline-block;
+      vertical-align: sub;
+      margin-left: 15px;
+      > img {
+        height: 22px;
+      }
+    }
+  }
+
+  .el-collapse-item__header {
+    font-size: 15px;
+    font-weight: bold;
+    color: $main-color;
+    .header_name {
+      margin-left: 8px;
+    }
+    > .svg-icon {
+      font-size: 22px;
+    }
+  }
+}
+.left-scrollbar {
+  height: calc(100vh - #{$action-bar-height});
+  overflow: hidden;
+  padding-right: 10px;
+}

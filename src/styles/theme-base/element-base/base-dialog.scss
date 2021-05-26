@@ -1,0 +1,127 @@
+/* 弹窗 */
+.el-message-box {
+  &__wrapper .el-message-box {
+    padding-bottom: $--messagebox-header-padding-v;
+  }
+
+  &__header {
+    padding: $--messagebox-header-padding-v $--messagebox-header-padding-h
+      $--messagebox-header-padding-v - $--messagebox-header-padding-h;
+  }
+
+  &__title {
+    height: 1.2em;
+    line-height: 1.2em;
+    font-size: $--messagebox-title-font-size;
+    font-weight: bolder;
+    color: $--messagebox-title-color;
+  }
+
+  &__headerbtn {
+    top: $--messagebox-header-padding-v;
+    right: $--messagebox-header-padding-h;
+    height: 1.2 * $--messagebox-title-font-size;
+    line-height: 1.2 * $--messagebox-title-font-size;
+    font-size: $--font-size-small;
+    color: $--color-text-placeholder;
+  }
+
+  &__content {
+    position: relative;
+    padding: $--messagebox-header-padding-h;
+    color: $--color-text-regular;
+  }
+
+  &__status {
+    font-size: 2em;
+  }
+
+  &__btns {
+    padding: $--messagebox-header-padding-v - $--messagebox-header-padding-h
+      $--messagebox-header-padding-h $--messagebox-header-padding-h;
+    text-align: center;
+    .el-button {
+      min-width: 6em;
+    }
+    .el-button + .el-button {
+      margin-left: 2em;
+    }
+  }
+}
+
+// HACK: 增加样式表优先级，内置的旧样式
+.el-dialog__wrapper,
+.el-dialog__wrapper.ui-page-dialog,
+.el-drawer__wrapper {
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .el-dialog__header,
+  .el-drawer__header {
+    min-height: 1.2em;
+    margin-bottom: 0;
+    padding: $--dialog-header-padding-v $--dialog-header-padding-h $--dialog-header-padding-v -
+      $--dialog-header-padding-h;
+    background-color: $--dialog-header-bg-color;
+    border-bottom-width: 0px;
+  }
+
+  .el-dialog__title,
+  .el-dialog__header,
+  .el-drawer__header span {
+    height: 1.2em;
+    line-height: 1.2em;
+    color: $--color-text-regular;
+    font-size: $--dialog-title-font-size;
+  }
+
+  .el-dialog__headerbtn,
+  .el-drawer__close-btn {
+    top: $--dialog-header-padding-v;
+    right: $--dialog-header-padding-h;
+    height: 1.2 * $--dialog-title-font-size;
+    line-height: 1.2 * $--dialog-title-font-size;
+    font-size: $--font-size-small;
+  }
+
+  .el-dialog__headerbtn .el-dialog__close,
+  .el-drawer__close-btn .el-icon-close {
+    color: $--color-text-placeholder;
+
+    &:hover {
+      color: $--color-primary;
+    }
+  }
+
+  .el-dialog__body,
+  .el-drawer__body {
+    padding: $--dialog-header-padding-h;
+    overflow: auto;
+  }
+
+  .el-dialog__footer {
+    padding: $--dialog-header-padding-v - $--dialog-header-padding-h $--dialog-header-padding-v
+      $--dialog-header-padding-h;
+    text-align: center;
+    .el-button {
+      min-width: 6em;
+    }
+    .el-button + .el-button {
+      margin-left: 2em;
+    }
+  }
+}
+
+.el-dialog__wrapper.ui-page-dialog .el-dialog {
+  display: block;
+}
+
+/* 消除浏览器 focus 样式 */
+.el-drawer,
+.el-drawer__header span:focus,
+.el-drawer__close-btn,
+.el-dialog__close {
+  outline: none;
+}

@@ -1,0 +1,59 @@
+.el-select {
+    .el-tag {
+        color: $--color-text-primary;
+        background-color: transparent;
+        border-color: transparent;
+
+        .el-tag__close {
+            color: $--color-white;
+            background-color: $--color-text-placeholder;
+
+            &:hover {
+                background-color: $--color-danger;
+            }
+        }
+    }
+
+}
+
+.el-select-dropdown {
+    .el-select-dropdown__item {
+        padding-left: $--size-default;
+        padding-right: $--size-default;
+    }
+
+    &.is-multiple .el-select-dropdown__item {
+        $icon-width: 14px; // 选中图标宽度
+
+        padding-left: $--size-default * 1.5 + $icon-width;
+
+        &.selected {
+            font-weight: normal;
+
+            &::before,
+            &::after {
+                left: $--size-default;
+                right: auto;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: $icon-width;
+                height: $icon-width;
+                background: $--color-primary;
+            }
+
+            &::after {
+                left: $--size-default + 1;
+                font-size: $icon-width - 2;
+                color: $--color-white;
+            }
+
+        }
+
+
+    }
+}

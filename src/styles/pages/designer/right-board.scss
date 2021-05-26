@@ -1,0 +1,96 @@
+.right-board {
+  width: 350px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  .el-form {
+    padding: $padding * 2 $padding;
+    padding-right: $padding + 15px; // HACK: el-scrollbar 负边距
+  }
+  .el-collapse {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    &.with-padding {
+      margin-left: 0 - $padding;
+      margin-right: 0 - $padding;
+      .el-collapse-item__header {
+        padding-left: $padding;
+        padding-right: $padding;
+      }
+      .el-collapse-item__content {
+        padding: $padding;
+      }
+    }
+  }
+  .field-box {
+    position: relative;
+    height: calc(100vh - #{$action-bar-height});
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .el-scrollbar {
+    height: 100%;
+  }
+  .el-tab-pane {
+    padding: 0px;
+  }
+
+  .option-drag {
+    cursor: move;
+  }
+  .time-range {
+    .el-date-editor {
+      width: 227px;
+    }
+    ::v-deep .el-icon-time {
+      display: none;
+    }
+  }
+  .document-link {
+    position: absolute;
+    display: block;
+    width: 26px;
+    height: 26px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background: $main-color;
+    z-index: 1;
+    border-radius: 0 0 6px 0;
+    text-align: center;
+    line-height: 26px;
+    color: #fff;
+    font-size: 18px;
+  }
+  .select-item {
+    display: flex;
+    align-items: center;
+    border: 1px dashed #fff;
+    box-sizing: border-box;
+    &.sortable-chosen {
+      border: 1px dashed $main-color;
+    }
+    & + .select-item {
+      margin-top: 4px;
+    }
+    & .close-btn {
+      cursor: pointer;
+      color: #f56c6c;
+    }
+    & .el-input + .el-input {
+      margin-left: $--size-inline-block;
+    }
+  }
+  .select-line-icon {
+    line-height: 32px;
+    font-size: 22px;
+    padding: 0 4px;
+    color: #777;
+  }
+  .node-label {
+    font-size: 14px;
+  }
+  .node-icon {
+    color: #bebfc3;
+  }
+}

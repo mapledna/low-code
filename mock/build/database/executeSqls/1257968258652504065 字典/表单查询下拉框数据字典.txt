@@ -1,0 +1,63 @@
+// 请求三份数据
+// api/build/database/executeSqls
+
+{
+  "executeSqlList":[
+    {
+      "sqlId":"1257968258652504065",
+      "parameters":{"p_id":"1261170088084930561"}
+    },
+    {
+      "sqlId":"1257968258652504065",
+      "parameters":{"p_id":"1261169218253389825"}
+    },
+    {
+      "sqlId":"1257968258652504065",
+      "parameters":{"p_id":"1261169630276648961"}
+    }
+  ]
+}
+
+// 响应
+{
+	"code":0,
+	"data":{
+		"table_1":[
+			{
+				"id":"1",
+				"label":"JSON",
+				"selected":0
+			},
+			{
+				"id":"2",
+				"label":"表单",
+				"selected":0
+			}
+		],
+		"table_2":[
+			{
+				"id":"1",
+				"label":"GET请求",
+				"selected":0
+			},
+			{
+				"id":"2",
+				"label":"POST请求",
+				"selected":0
+			}
+		],
+		"table_0":[
+			{
+				"id":"1",
+				"label":"JSON",
+				"selected":0
+			},
+			{
+				"id":"2",
+				"label":"字符串",
+				"selected":0
+			}
+		]
+	},
+	"message":"success"
+}

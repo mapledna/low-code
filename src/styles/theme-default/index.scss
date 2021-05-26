@@ -1,0 +1,9 @@
+/**
+ * 配置平台默认样式
+ */
+@import "./utils";
+@import "@/styles/theme-base";
+
+@import "./element"; // UI元素
+@import "./components"; // 内部组件
+@import "./pages"; // 特殊页面

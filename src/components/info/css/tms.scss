@@ -1,0 +1,403 @@
+.LogisticsMIS {
+  overflow: auto;
+  height: 100%;
+  font-family: MicrosoftYaHei;
+  .con_part {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .banner {
+    background-color: #fff;
+    background-image: url("../../assets/img/info/common/banner_bg.png");
+    background-size: 100% 100%;
+    .banner_content {
+      padding-top: 127px;
+      .left_part {
+        width: 609px;
+        padding-right: 91px;
+        float: left;
+        text-align: left;
+        .banner_title {
+          width: 400px;
+          height: 36px;
+          font-family: MicrosoftYaHei-Bold;
+          font-size: 36px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 28px;
+          letter-spacing: 2px;
+          color: #ffffff;
+        }
+        .description {
+          margin-top: 40px;
+          width: 609px;
+          height: 105px;
+          font-family: MicrosoftYaHei;
+          font-size: 16px;
+          line-height: 30px;
+          color: #c5cff7;
+        }
+        .btn_p {
+          text-align: center;
+          margin-top: 66px;
+          .manageControl {
+            width: 162px;
+            height: 42px;
+            line-height: 42px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 21px;
+            font-size: 16px;
+            color: #ffffff;
+            transition: all 0.3s;
+            &.left {
+              background-color: #333333;
+              &:hover {
+                background-color: #666;
+              }
+            }
+            &.right {
+              height: 40px;
+              line-height: 40px;
+              margin-left: 20px;
+              border: solid 1px #ffffff;
+              &:hover {
+                background-color: #666;
+              }
+            }
+          }
+        }
+      }
+      i.logo_lmis {
+        position: absolute;
+        right: -90px;
+        top: 222px;
+        width: 553px;
+        height: 349px;
+        background: url("../../assets/img/info/tms/1_2.png");
+        background-size: 100% 100%;
+      }
+    }
+  }
+  .page_part {
+    position: relative;
+    .title {
+      height: 33px;
+      padding-top: 72px;
+      font-family: MicrosoftYaHeiLight;
+      font-size: 34px;
+      line-height: 30px;
+      color: #333333;
+      text-align: center;
+    }
+  }
+  .function {
+    // height: 356px;
+    background-color: #fff;
+    .system-function{
+      text-align: center;
+      margin: 90px 0 200px;
+      position: relative;
+      .system_icon{
+        width: 451px;
+        height: 322px;
+        background: url("../../assets/img/info/tms/2_1.png");
+        background-size: 100% 100%;
+      }
+      .content{
+        position: absolute;
+        .title-c{
+          position: relative;
+          height: 32px;
+          i{
+            position: absolute;
+            background-size: 100% 100%;
+          }
+          span{
+            font-size: 22px;
+            line-height: 22px;
+            color: #53abfd;
+            position: absolute;
+          }          
+        }
+        .desc-c{
+          text-align: left;
+          font-size: 14px;
+          line-height: 24px;
+          color: #333333;
+        }
+
+      }
+      .content-data{
+        width: 429px;
+        top: -20px;
+        .title-c{
+          text-align: right;
+          .data{
+            width: 35px;
+            height: 32px;
+            background: url("../../assets/img/info/tms/2_4.png");
+            top: -6px;
+            right: 98px;
+          }
+          span{          
+            top: 0;
+            right: 6px;
+          }
+        }
+      }
+      .content-order{
+        width: 364px;
+        top: 124px;
+        .title-c{
+          text-align: right;
+          .order{
+            width: 36px;
+            height: 36px;
+            background: url("../../assets/img/info/tms/2_2.png");
+            top: -8px;
+            right: 94px;
+          }
+          span{          
+            top: 0;
+            right: 0px;
+          }
+        }
+      }
+      .content-tranport{
+        width: 422px;
+        top: 290px;
+        .title-c{
+          text-align: right;
+          .tranport{
+            width: 47px;
+            height: 39px;
+            background: url("../../assets/img/info/tms/2_5.png");
+            top: -8px;
+            right: 94px;
+          }
+          span{          
+            top: 0;
+            right: 0px;
+          }
+        }
+      }
+      .content-morniter{
+        width: 431px;
+        top: -20px;
+        right: 0;
+        .title-c{
+          text-align: left;
+          .morniter{
+            width: 45px;
+            height: 38px;
+            background: url("../../assets/img/info/tms/2_3.png");
+            top: -8px;
+            left: 94px;
+          }
+          span{          
+            top: 0;
+            left: 0px;
+          }
+        }
+      }
+      .content-service{
+        // width: 243px;
+        top: 124px;
+        right: 118px;
+        .title-c{
+          text-align: left;
+          .service{
+            width: 31px;
+            height: 28px;
+            background: url("../../assets/img/info/tms/2_6.png");
+            top: -8px;
+            left: 188px;
+          }
+          span{          
+            top: 0;
+            left: 0px;
+          }
+        }
+      }
+      .content-chart{
+        width: 428px;
+        top: 290px;
+        right: 0px;
+        .title-c{
+          text-align: left;
+          .chart{
+            width: 35px;
+            height: 28px;
+            background: url("../../assets/img/info/tms/2_7.png");
+            top: -8px;
+            left: 188px;
+          }
+          span{          
+            top: 0;
+            left: 0px;
+          }
+        }
+      }
+    }
+  }
+  .data_manage {
+    height: 691px;
+    background: #f6f8fc;
+    .manage-view {
+      // margin-top: 63px;
+      position: relative;
+      i.data_manage_icon {
+        position: absolute;
+        left: 0;
+        margin-top: 29px;
+        width: 443px;
+        height: 443px;
+        background-image: url("../../assets/img/info/tms/3_1.png");
+        background-size: 100% 100%;
+      }
+      .right-text-view {
+        margin-top: 118px;
+        list-style: none;
+        position: absolute;
+        right: 0;
+        li {
+          margin-bottom: 23px;
+          .common_icon {
+            width: 6px;
+            float: left;
+            height: 6px;
+            background-color: #333333;
+            border-radius: 50%;
+            margin-top: 10px;
+            margin-right: 11px;
+          }
+          .sub_title {
+            width: 328px;
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: 0px;
+            font-weight: bold;
+            color: #333333;
+          }
+          .sub_title_t{
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0px;
+            color: #333333;
+            width: 573px;
+            margin-left: 18px;
+          }
+        }
+      }
+    }
+  }
+  .data_change {
+    height: 687px;
+    // background: #f6f8fc;    
+    background-image: url("../../assets/img/info/tms/5_1.png");
+    background-size: 100% 100%;
+    .title{
+      padding-top: 134px;
+    }
+    .manage-view {
+      // margin-top: 63px;
+      position: relative;
+      i.data_manage_icon {
+        position: absolute;
+        left: 0;
+        margin-top: 74px;
+        width: 640px;
+        height: 329px;
+        background-image: url("../../assets/img/info/tms/5_2.png");
+        background-size: 100% 100%;
+      }
+      .right-text-view {
+        margin-top: 187px;
+        list-style: none;
+        position: absolute;
+        right: 0;
+        width: 489px;
+        li {
+          margin-bottom: 23px;
+          .sub_title {
+            font-size: 18px;
+            line-height: 25px;
+            font-weight: bold;
+            font-family: MicrosoftYaHei-Bold;
+            letter-spacing: 0px;
+            color: #333333;
+          }
+          .sub_title_t{
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0px;
+            color: #333333;
+            margin-top: 11px;
+          }
+        }
+      }
+    }
+  } 
+  .store-manage {
+    // height: 759px;
+
+    .img-view {
+      position: relative;
+      margin-top: 32px;
+      img {
+        // position: absolute;
+        // left: 50%;
+        // margin-left: -464.5px;
+        width: 1201px;
+        height: 656px;
+      }
+    }
+    .desc{
+      margin: 54px 0 77px;
+      .desc_title{
+        font-family: MicrosoftYaHei;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0px;
+        color: #333333;
+        text-align: center;
+      }
+      .desc_con{
+        width: 905px;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        color: #333333;
+        margin: 14px auto 0;
+        text-indent: 28px;
+      }
+    }
+  }
+  .transport_flow {
+    height: 668px;
+    .process-text {
+      width: 550px;
+      position: absolute;
+      left: 0;
+      top: 314px;
+      p{
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        color: #333333;
+        text-indent: 28px;
+      }
+    }
+    .data_manage_icon{
+      width: 668px;
+      height: 445px;
+      background: url("../../assets/img/info/tms/4_1.png");
+      background-size: 100% 100%;
+      position: absolute;
+      right: 0;
+      top: 171px;
+    }
+  }
+}

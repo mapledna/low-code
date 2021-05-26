@@ -1,0 +1,37 @@
+/**
+ * 布局效果：tabs 在 header 下方
+ */
+.ui-main-v2 {
+    /* 布局变量 */
+    @import "@/components/UiMain/style/variable";
+    // 布局-菜单左侧竖线
+    $menu-bord-width: 0;
+
+    // 选项卡头部
+    $main-tabs-header-height: 34px;
+    // 选项卡头部-选项
+    $main-tabs-item-bg-color: $--color-white;
+    $main-tabs-item-border-width: 0;
+    $main-tabs-item-radius: $--border-radius-base;
+    $main-tabs-item-active-font-color: $--color-white;
+    $main-tabs-item-active-bg-color: $--color-primary-dark;
+    // 面包屑
+    $breadcrumb-padding-h: 30px;
+    $breadcrumb-active-font-size: $--font-size-medium;
+
+    /* 基础 */
+    @import "@/components/UiMain/style";
+
+    /* 布局：顶部选项卡、面包屑 */
+    @import "./layout";
+
+    /* 顶部&内容选项卡 */
+    @import "./tabs-content"; // 页面内容中的选项卡
+    @import "./tabs-scroll"; // 选项卡滚动按钮
+    @import "./tabs-close"; // 选项卡滚动按钮
+
+    /* 表格 */
+    @import "./table";
+    /* 分页 */
+    @import "./pagination";
+}

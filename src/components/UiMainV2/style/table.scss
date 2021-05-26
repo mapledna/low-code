@@ -1,0 +1,17 @@
+/** 
+ * 表格顶部搜索表单、按钮、表格直接的间距
+ */
+.table-search-form,
+.table-top-btn-warp {
+    margin-left: $--size-default;
+    margin-right: $--size-default;
+}
+
+// 从表搜索表单
+.ui-main__content .el-tabs .table-search-form {
+    margin-top: $--size-default;
+
+    &:empty {
+        margin-top: 0;
+    }
+}

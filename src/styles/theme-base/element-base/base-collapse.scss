@@ -1,0 +1,22 @@
+$collapse-padding: $--size-sm !default;
+
+.el-collapse-item__header {
+  height: $--input-height;
+  line-height: $--input-height;
+  &.is-active {
+    background-color: $--color-primary-light-9;
+  }
+}
+
+.el-collapse.with-padding {
+  .el-collapse-item__header {
+    padding-left: $collapse-padding;
+    padding-right: $collapse-padding;
+  }
+  .el-collapse-item__arrow {
+    margin-right: 0;
+  }
+  .el-collapse-item__content {
+    padding: $collapse-padding;
+  }
+}

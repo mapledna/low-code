@@ -1,0 +1,21 @@
+// @import "../utils/index.scss";
+
+.el-main {
+    padding: 0;
+}
+
+/* HACK: 布局错误 */
+.el-row>.el-tabs {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+
+.el-tab-pane {
+    &>.el-col:first-child {
+        padding-left: 0 !important;
+    }
+
+    &>.el-col:last-child {
+        padding-right: 0 !important;
+    }
+}

@@ -1,0 +1,56 @@
+/* 顶部选项卡 */
+.ui-main__tabs>.el-tabs__header {
+    margin-bottom: 0;
+    border-bottom-width: 0;
+
+    /* 重置部分tab样式 */
+    .el-tabs__nav {
+        height: $main-tabs-header-height;
+        background-color: $main-tabs-item-bg-color;
+        border-width: $main-tabs-item-border-width;
+    }
+
+    .el-tabs__item {
+        height: $main-tabs-header-height - $main-tabs-item-border-width * 2;
+        line-height: $main-tabs-header-height - $main-tabs-item-border-width * 2;
+        background: $main-tabs-item-bg-color;
+        border-left-width: $main-tabs-item-border-width;
+        user-select: none;
+        transition: all .1s;
+
+        &.is-active,
+        &:hover {
+            background: $main-tabs-item-active-bg-color;
+            color: $main-tabs-item-active-font-color;
+
+            .el-icon-close {
+                color: $main-tabs-item-active-font-color;
+            }
+        }
+
+        /* 添加新tab样式：圆角和阴影 */
+        box-shadow: $--container-shadow;
+        border-top-left-radius: $main-tabs-item-radius;
+        border-top-right-radius: $main-tabs-item-radius;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    /* 选项卡滚动按钮 */
+    .el-tabs__nav-next,
+    .el-tabs__nav-prev{
+        line-height: $main-tabs-header-height - $main-tabs-item-border-width * 2;
+        background-color: $main-tabs-item-bg-color;
+    }
+}
+
+.ui-tabs-wrapper .el-dropdown .el-dropdown-link.el-dropdown-selfdefine {
+    line-height: $main-tabs-header-height - $main-tabs-item-border-width * 2;
+    background-color: $main-tabs-item-bg-color;
+}
+
+.ui-main__tabs>.el-tabs__content {
+    z-index: 2;
+    background-color: $--color-white;
+    box-shadow: $--container-shadow;
+}

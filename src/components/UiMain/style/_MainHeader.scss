@@ -1,0 +1,66 @@
+.ui-main__header {
+  &__warp {
+    position: absolute;
+    z-index: 990;
+    top: 0;
+    left: $aside-width;
+    right: 0;
+    height: $--header-height;
+    line-height: $--header-height;
+    margin: 0;
+    padding: 0;
+    background: $--header-bg-color;
+    box-shadow: $--container-shadow;
+    // &.el-header {
+    //   height: $--header-height !important;
+    // }
+  }
+
+  @include clearfix();
+  height: 100%;
+  padding: 0 $--layout-padding;
+
+  &__left {
+    float: left;
+  }
+
+  &__right {
+    float: right;
+  }
+
+  &__title {
+    font-size: $--header-title-size;
+    color: $--header-title-color;
+  }
+
+  &__item {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+
+    .el-dropdown {
+      line-height: initial;
+      vertical-align: baseline;
+      cursor: pointer;
+    }
+  }
+
+  &__item + &__item {
+    margin-left: 1em;
+  }
+
+  .theme-icon {
+    display: inline-block;
+    vertical-align: middle;
+    height: 1em;
+    width: 1em;
+    border: 1px solid $--color-text-regular;
+  }
+
+  .ellipsis {
+    max-width: 12em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}

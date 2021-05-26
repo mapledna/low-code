@@ -1,0 +1,403 @@
+.config {
+  overflow: auto;
+  .con_part {
+    max-width: 1200px;
+    margin: 0 auto;
+    .icon-view {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+  .banner {
+    background: url("../../assets/img/info/common/banner_bg.png");
+    background-size: 100% 100%;
+    i.logo {
+      margin-top: 116px;
+      width: 92px;
+      height: 87px;
+      background: url("../../assets/img/info/cloud-warehouse-pc/logo.png");
+      background-size: 100% 100%;
+    }
+    .title {
+      font-family: MicrosoftYaHei-Bold;
+      font-size: 48px;
+      line-height: 28px;
+      letter-spacing: 2px;
+      color: #ffffff;
+      margin-top: 60px;
+      margin-bottom: 18px;
+    }
+    .sub_title {
+      font-size: 20px;
+      line-height: 29px;
+      letter-spacing: 4px;
+      color: #c5cff7;
+    }
+    .btn_p {
+      text-align: center;
+      margin-top: 66px;
+      .manageControl {
+        width: 162px;
+        height: 42px;
+        line-height: 42px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 21px;
+        font-size: 16px;
+        color: #ffffff;
+        transition: all 0.3s;
+        &.left {
+          background-color: #333333;
+          &:hover {
+            background-color: #666;
+          }
+        }
+        &.right {
+          height: 40px;
+          line-height: 40px;
+          margin-left: 20px;
+          border: solid 1px #ffffff;
+          &:hover {
+            background-color: #666;
+          }
+        }
+      }
+    }
+  }
+  .function_list {
+    height: 431px;
+    background-color: #fff;
+    .title {
+      padding-top: 112px;
+      padding-bottom: 90px;
+      text-align: center;
+      font-family: MicrosoftYaHeiLight;
+      font-size: 26px;
+      line-height: 25px;
+      color: #333333;
+    }
+    li {
+      width: 200px;
+      padding-top: 70px;
+      float: left;
+      text-align: center;
+      position: relative;
+      span {
+        font-size: 14px;
+        line-height: 20px;
+        color: #666666;
+      }
+      i {
+        position: absolute;
+        left: 50%;
+        top: 0px;
+        &.store {
+          width: 46px;
+          height: 48px;
+          margin-left: -23px;
+          background: url("../../assets/img/info/cloud-warehouse-pc/outInBound.png");
+          background-size: 100% 100%;
+        }
+        &.storage {
+          width: 49px;
+          height: 49px;
+          margin-left: -25px;
+          background: url("../../assets/img/info/cloud-warehouse-pc/storage.png");
+          background-size: 100% 100%;
+        }
+        &.report {
+          width: 51px;
+          height: 48px;
+          margin-left: -25px;
+          background: url("../../assets/img/info/cloud-warehouse-pc/report.png");
+          background-size: 100% 100%;
+        }
+        &.warn {
+          width: 52px;
+          height: 53px;
+          margin-left: -26px;
+          background: url("../../assets/img/info/cloud-warehouse-pc/warn.png");
+          background-size: 100% 100%;
+        }
+        &.check {
+          width: 52px;
+          height: 52px;
+          margin-left: -26px;
+          background: url("../../assets/img/info/cloud-warehouse-pc/check.png");
+          background-size: 100% 100%;
+        }
+        &.system {
+          width: 53px;
+          height: 51px;
+          margin-left: -26px;
+          background: url("../../assets/img/info/cloud-warehouse-pc/system.png");
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+  .storage {
+    height: 1282px;
+    background-image: linear-gradient(0deg, #2ba6ff 0%, #80caff 100%),
+      linear-gradient(#ffffff, #ffffff);
+    background-blend-mode: normal, normal;
+    background: url("../../assets/img/info/cloud-warehouse-pc/storage_bg.png");
+    background-size: 100% 100%;
+    i.outInBound {
+      width: 299px;
+      height: 549px;
+      background: url("../../assets/img/info/cloud-warehouse-pc/page_store.png");
+      background-size: 100% 100%;
+      position: relative;
+      left: 250px;
+      top: 0px;
+    }
+    i.manage_icon {
+      width: 523px;
+      height: 516px;
+      background: url("../../assets/img/info/cloud-warehouse-pc/manage.png");
+      background-size: 100% 100%;
+      position: relative;
+      left: 520px;
+      top: 130px;
+    }
+    .store,
+    .manage {
+      width: 100%;
+      height: 550px;
+      position: relative;
+      .title {
+        font-family: MicrosoftYaHeiLight;
+        font-size: 44px;
+        line-height: 28px;
+        color: #ffffff;
+        padding-bottom: 20px;
+      }
+      .sub_title {
+        font-family: MicrosoftYaHeiLight;
+        font-size: 24px;
+        line-height: 28px;
+        color: #ffffff;
+      }
+      ul {
+        padding-top: 40px;
+        padding-bottom: 37px;
+        li {
+          position: relative;
+          padding-left: 50px;
+          span {
+            font-size: 18px;
+            line-height: 54px;
+            color: #ffffff;
+          }
+          i {
+            position: absolute;
+            left: 4px;
+            &.code {
+              width: 24px;
+              height: 24px;
+              background: url("../../assets/img/info/cloud-warehouse-pc/code.png");
+              background-size: 100% 100%;
+              top: 15px;
+            }
+            &.fast {
+              width: 27px;
+              height: 27px;
+              background: url("../../assets/img/info/cloud-warehouse-pc/fast.png");
+              background-size: 100% 100%;
+              top: 13px;
+            }
+            &.record {
+              width: 26px;
+              height: 19px;
+              background: url("../../assets/img/info/cloud-warehouse-pc/record.png");
+              background-size: 100% 100%;
+              top: 17px;
+            }
+            &.search {
+              width: 26px;
+              height: 26px;
+              background: url("../../assets/img/info/cloud-warehouse-pc/search.png");
+              background-size: 100% 100%;
+              top: 15px;
+            }
+            &.adjust {
+              width: 24px;
+              height: 24px;
+              background: url("../../assets/img/info/cloud-warehouse-pc/adjust.png");
+              background-size: 100% 100%;
+              top: 15px;
+            }
+            &.warn {
+              width: 24px;
+              height: 30px;
+              background: url("../../assets/img/info/cloud-warehouse-pc/warn_little.png");
+              background-size: 100% 100%;
+              top: 8px;
+            }
+          }
+        }
+      }
+      button {
+        width: 128px;
+        height: 42px;
+        background-color: #ffffff;
+        border-radius: 21px;
+        font-size: 16px;
+        line-height: 40px;
+        color: #048ced;
+        border: none;
+      }
+    }
+    .store .info {
+      position: absolute;
+      top: 150px;
+      right: 200px;
+    }
+    .manage .info {
+      position: absolute;
+      top: 150px;
+      left: 250px;
+    }
+  }
+  .rights {
+    height: 350px;
+    background-color: #fff;
+    position: relative;
+    .info {
+      position: absolute;
+      top: 86px;
+      right: 114px;
+    }
+    i.rights_icon {
+      width: 615px;
+      height: 486px;
+      background: url("../../assets/img/info/cloud-warehouse-pc/rights.png");
+      background-size: 100% 100%;
+      position: relative;
+      left: 50px;
+      top: 100px;
+    }
+    .title {
+      font-family: MicrosoftYaHeiLight;
+      font-size: 44px;
+      line-height: 28px;
+      color: #333;
+      padding-bottom: 20px;
+    }
+    .sub_title {
+      font-family: MicrosoftYaHeiLight;
+      font-size: 24px;
+      line-height: 28px;
+      color: #333;
+    }
+    ul {
+      padding-top: 40px;
+      padding-bottom: 37px;
+      li {
+        position: relative;
+        padding-left: 50px;
+        span {
+          font-size: 18px;
+          line-height: 54px;
+          color: #333;
+        }
+        i {
+          position: absolute;
+          left: 4px;
+          &.person {
+            width: 26px;
+            height: 25px;
+            background: url("../../assets/img/info/cloud-warehouse-pc/person.png");
+            background-size: 100% 100%;
+            top: 15px;
+          }
+          &.org {
+            width: 25px;
+            height: 25px;
+            background: url("../../assets/img/info/cloud-warehouse-pc/org.png");
+            background-size: 100% 100%;
+            top: 15px;
+          }
+          &.setRights {
+            width: 23px;
+            height: 29px;
+            background: url("../../assets/img/info/cloud-warehouse-pc/setRights.png");
+            background-size: 100% 100%;
+            top: 13px;
+          }
+        }
+      }
+    }
+    button {
+      width: 128px;
+      height: 42px;
+      background-color: #1b9fff;
+      border-radius: 21px;
+      font-size: 16px;
+      line-height: 42px;
+      color: #ffffff;
+      border: none;
+    }
+  }
+  .more {
+    height: 1072px;
+    background-image: linear-gradient(0deg, #7084fb 0%, #61e7eb 100%),
+      linear-gradient(#ffffff, #ffffff);
+    background-blend-mode: normal, normal;
+    background: url("../../assets/img/info/cloud-warehouse-pc/more_bg.png");
+    background-size: 100% 100%;
+    position: relative;
+    z-index: -1;
+    i.more_icon {
+      width: 996px;
+      height: 499px;
+      background: url("../../assets/img/info/cloud-warehouse-pc/more.png");
+      background-size: 100% 100%;
+      position: relative;
+      left: 50%;
+      margin-left: -498px;
+      top: 90px;
+    }
+    .title {
+      font-family: MicrosoftYaHeiLight;
+      font-size: 44px;
+      line-height: 28px;
+      color: #ffffff;
+      padding-bottom: 20px;
+      text-align: center;
+      padding-top: 400px;
+    }
+    .sub_title {
+      font-family: MicrosoftYaHeiLight;
+      font-size: 24px;
+      line-height: 28px;
+      color: #ffffff;
+      text-align: center;
+    }
+  }
+  .choose {
+    height: 599px;
+    background-color: #fff;
+    .title {
+      font-family: MicrosoftYaHeiLight;
+      font-size: 38px;
+      line-height: 28px;
+      color: #333333;
+      text-align: center;
+      position: relative;
+      padding-top: 140px;
+    }
+    i.customers_icon {
+      width: 1026px;
+      height: 206px;
+      background: url("../../assets/img/info/cloud-warehouse-pc/customers.png");
+      background-size: 100% 100%;
+      position: relative;
+      left: 50%;
+      margin-left: -513px;
+      top: 90px;
+    }
+  }
+}

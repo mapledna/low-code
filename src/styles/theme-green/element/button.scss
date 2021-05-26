@@ -1,0 +1,108 @@
+/* 按钮尺寸 */
+.el-button {
+    min-width: 80px;
+
+    &--small,
+    &--mini {
+        min-width: 32px;
+    }
+}
+
+/* 按钮颜色 */
+/** 
+ * 动态伪类
+ * &,&:hover,&:focus,&:active
+ */
+@mixin dynamicPseudoClasses($font-color, $background-color, $border-color, $isPlain) {
+
+    &:hover,
+    &:focus {
+        color: rgba($font-color, .7);
+        background-color: rgba($background-color, .7);
+        border-color: if($isPlain, rgba($border-color, .7), transparent);
+    }
+
+    &:active {
+        color: $font-color;
+        background-color: $background-color;
+        border-color: $border-color;
+    }
+
+    &.is-disabled {
+        color: rgba($--color-white, .7);
+        background-color: rgba($background-color, .35);
+        border-color: if($isPlain, rgba($border-color, .7), transparent);
+    }
+}
+
+.el-button {
+    &--default:not(.el-button--text) {
+
+        &,
+        &.is-plain {
+            @include dynamicPseudoClasses($--button-default-font-color, $--button-default-background-color, $--color-primary, true);
+        }
+
+        &.is-disabled,
+        &.is-disabled.is-plain {
+            color: $--disabled-color-base;
+            border-color: transparent;
+            background-color: $--disabled-fill-base;
+        }
+    }
+
+    &--primary:not(.el-button--text) {
+        @include dynamicPseudoClasses($--button-primary-font-color, $--button-primary-background-color, $--button-primary-border-color, false);
+
+        &.is-plain {
+            @include dynamicPseudoClasses($--button-primary-font-color, $--button-primary-background-color, $--button-primary-border-color, true);
+        }
+    }
+
+    &--success:not(.el-button--text) {
+        @include dynamicPseudoClasses($--button-success-font-color, $--button-success-background-color, $--button-success-border-color, false);
+
+        &.is-plain {
+            @include dynamicPseudoClasses($--button-success-font-color, $--button-success-background-color, $--button-success-border-color, true);
+        }
+    }
+
+    &--warning:not(.el-button--text) {
+        @include dynamicPseudoClasses($--button-warning-font-color, $--button-warning-background-color, $--button-warning-border-color, false);
+
+        &.is-plain {
+            @include dynamicPseudoClasses($--button-warning-font-color, $--button-warning-background-color, $--button-warning-border-color, true);
+        }
+    }
+
+    &--danger:not(.el-button--text) {
+        @include dynamicPseudoClasses($--button-danger-font-color, $--button-danger-background-color, $--button-danger-border-color, false);
+
+        &.is-plain {
+            @include dynamicPseudoClasses($--button-danger-font-color, $--button-danger-background-color, $--button-danger-border-color, true);
+        }
+    }
+
+    &--info:not(.el-button--text) {
+        @include dynamicPseudoClasses($--button-info-font-color, $--button-info-background-color, $--button-info-border-color, false);
+
+        &.is-plain {
+            @include dynamicPseudoClasses($--button-info-font-color, $--button-info-background-color, $--button-info-border-color, true);
+        }
+    }
+}
+
+// HACK:
+.el-input-group__append,
+.el-input-group__prepend {
+
+  .el-button:not(.el-button--text) {
+    box-shadow: none;
+
+    &:hover {
+      color: $--button-info-font-color;
+      border-color: transparent;
+      background-color: transparent;
+    }
+  }
+}

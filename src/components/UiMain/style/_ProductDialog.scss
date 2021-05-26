@@ -1,0 +1,31 @@
+.header-product-dialog {
+    .fit {
+        display: block;
+        // text-align: center;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .block {
+        display: inline-block;
+        width: 100px;
+        padding: 0 20px;
+        vertical-align: text-top;
+        cursor: pointer;
+
+        &:hover .title {
+            color: $--header-title-color;
+        }
+    }
+
+    .avatar:hover {
+        border: 1px solid $--color-primary;
+        box-shadow: 0 0 4px $--color-primary-dark;
+    }
+
+    .title {
+        font-size: 14px;
+        margin:5px 0px;
+        color: $--color-text-regular;
+    }
+}

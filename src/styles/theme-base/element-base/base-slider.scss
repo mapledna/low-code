@@ -1,0 +1,5 @@
+.el-slider__runway {
+  width: calc(100% - #{$--slider-button-wrapper-size});
+  margin-left: $--slider-button-wrapper-size / 2;
+  margin-right: $--slider-button-wrapper-size / 2;
+}

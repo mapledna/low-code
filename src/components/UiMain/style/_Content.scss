@@ -1,0 +1,42 @@
+/**
+ * 页面内容
+ */
+.ui-main__content {
+  &__warp {
+    position: relative;
+    margin-bottom: $--layout-padding;
+    padding: 0 $--layout-padding;
+    overflow-y: auto;
+  }
+}
+
+/* 页面内容中左右布局结构 */
+.content-layout {
+  position: relative;
+  @include clearfix();
+
+  /* HACK: 用 padding 抵消 el-row 负边距带来的横向滚轴 */
+  &__left {
+    float: left;
+    display: block;
+    width: $--aside-width; // NOTE: 会被组件配置的行内样式覆盖。
+    padding: $--layout-padding / 2;
+    border: $--border-base;
+  }
+
+  &__main {
+    float: left;
+    display: block;
+    height: 100%;
+    margin-left: $--layout-padding;
+    margin-right: 0 - $--layout-padding;
+    padding-right: $--layout-padding;
+    overflow-y: auto;
+  }
+
+  &__main > .el-main {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; // HACK: 隐藏 el-row 导致的横向滚轴
+  }
+}

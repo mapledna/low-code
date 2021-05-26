@@ -1,0 +1,101 @@
+$editorTabsborderColor: #121315;
+$editorTabsHeight: 32px;
+
+.preview-drawer {
+  .el-drawer__header {
+    display: none;
+  }
+  &.el-drawer__wrapper{
+    .el-drawer__body {
+      padding: 0;
+    }
+  }
+}
+.preview-drawer {
+  .left-editor {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+  }
+  .setting {
+    position: absolute;
+    right: 15px;
+    top: 3px;
+    color: #a9f122;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .right-preview {
+    position: relative;
+    display: block;
+    height: 100%;
+    .result-wrapper {
+      position: absolute;
+      top: $editorTabsHeight;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      box-sizing: border-box;
+      padding: 5px;
+    }
+    .result-loading-warp {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+  }
+  .action-bar {
+    height: $editorTabsHeight + 1px;
+    line-height: $editorTabsHeight + 1px;
+    background: #f2fafb;
+    .el-button {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+.editor-tabs.el-tabs {
+  & > .el-tabs__header {
+    margin: 0;
+    background: $editorTabsborderColor;
+    border-bottom-color: $editorTabsborderColor;
+
+    .el-tabs__nav {
+      background: $editorTabsborderColor;
+      border-color: $editorTabsborderColor;
+    }
+
+    .el-tabs__item {
+      height: $editorTabsHeight;
+      line-height: $editorTabsHeight;
+      color: #888a8e;
+      background: #363636;
+      margin-right: 5px;
+      border-left: 1px solid $editorTabsborderColor !important;
+      border-radius: 0;
+      user-select: none;
+
+      &.is-active {
+        background: #1e1e1e;
+        border-bottom-color: #1e1e1e !important;
+        color: #fff;
+      }
+    }
+  }
+
+  .el-tab-pane {
+    height: 100vh;
+  }
+  
+  .el-icon-edit {
+    color: #f1fa8c;
+  }
+
+  .el-icon-document {
+    color: #a95812;
+  }
+}

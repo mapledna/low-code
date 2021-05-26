@@ -1,0 +1,39 @@
+.ui-main__tabs {
+    box-sizing: border-box;
+    padding: $--layout-padding;
+    background: $--layout-background-color-base;
+
+    .el-tabs__item {
+        user-select: none;
+    }
+
+    &>.el-tabs__content {
+        background-color: $--layout-background-color-base;
+    }
+
+    .ui-main__tab-pane {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.ui-tabs-wrapper {
+    position: relative;
+    .el-dropdown{
+        position: absolute;
+        top: $--layout-padding;
+        right:$--layout-padding;
+        z-index: 99;
+    }
+    .el-dropdown-link.el-dropdown-selfdefine{
+        display: block;
+        background: #fff;
+        cursor: pointer;
+        i{
+            margin-left:2px;
+        }
+    }
+}
+
+

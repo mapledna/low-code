@@ -1,0 +1,79 @@
+/**
+ * 分页：
+ * 根据变量重制基础样式。可用于所有主题。
+ */
+$pagination-border-color: $--border-color-light !default;
+$pagination-border-hover-color: $--color-primary !default;
+
+.el-pagination {
+  padding: $--size-default 0 0 0; // HACK: 配置平台所有元素都被加了 form-item，导致底部边距过大
+
+  /* 小型分页 */
+  &--small {
+    // $small-height: $--input-mini-height + 2;// HACK: 补齐边框导致的高度差异
+    $small-height: 22px;
+    .el-input .el-input__inner {
+      height: $small-height;
+      line-height: $small-height;
+    }
+    .el-input__icon {
+      line-height: $small-height;
+    }
+  }
+}
+
+/* jumper 前往第X页 */
+.el-pagination__editor.el-input {
+  width: 50px; // HACK: 配置平台展示异常
+
+  .el-input__inner {
+    padding: 0; // HACK: 配置平台展示异常
+    &:hover {
+      border-color: $pagination-border-hover-color;
+    }
+  }
+}
+
+/* sizes 每页显示个数选择器 */
+.el-pagination__sizes .el-input .el-input__inner {
+  //   height: $--pagination-button-height;
+  //   line-height: $--pagination-button-height;
+
+  &:hover {
+    border-color: $pagination-border-hover-color;
+  }
+}
+
+/* 带有背景色的分页 */
+.el-pagination.is-background {
+  .btn-prev:not(:disabled).active,
+  .btn-next:not(:disabled).active,
+  .el-pager li:not(.disabled).active {
+    background: $--color-primary !important; // NOTE: 存在选择器优先级问题。why？？？
+    color: $--color-white;
+  }
+
+  .btn-prev,
+  .btn-next,
+  .el-pager li {
+    margin-left: 0;
+    font-weight: normal;
+    background: $--color-white;
+    border: 1px solid $pagination-border-color;
+  }
+
+  .btn-prev:not(:disabled),
+  .btn-next:not(:disabled),
+  .el-pager li:not(.disabled) {
+    &:hover,
+    &.active {
+      background: $--color-white;
+      border: 1px solid $pagination-border-hover-color;
+    }
+  }
+
+  // .btn-prev:disabled,
+  // .btn-next:disabled,
+  // .el-pager li.disabled {
+  // }
+}

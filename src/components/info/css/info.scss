@@ -1,0 +1,13 @@
+.mainpage{
+    overflow: auto;
+    height: 100%;
+    font-family: MicrosoftYaHei;
+    .con_part{
+        max-width:1200px;
+        margin:0 auto;
+        position: relative;
+    }
+}
+.banner{height: 680px;width:100%;}
+.banner .banner_content{text-align: center;}
+i.common_icon{display: inline-block;}

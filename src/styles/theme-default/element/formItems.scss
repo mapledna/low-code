@@ -1,0 +1,11 @@
+.el-form .form-inline {
+  margin-top: 3px; // 兼容按钮 box-shadow 展示
+}
+
+// HACK: 可配置平台内的分割线被包在 form-item 中，导致编辑非常大。在这里消除异常边距。
+.el-form-item__content {
+  & > .el-divider--horizontal {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

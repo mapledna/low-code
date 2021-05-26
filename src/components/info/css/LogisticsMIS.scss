@@ -1,0 +1,516 @@
+.LogisticsMIS {
+  overflow: auto;
+  height: 100%;
+  font-family: MicrosoftYaHei;
+  .con_part {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .banner {
+    background-color: #fff;
+    background-image: url("../../assets/img/info/common/banner_bg.png");
+    background-size: 100% 100%;
+    .banner_content {
+      padding-top: 127px;
+      .left_part {
+        width: 609px;
+        padding-right: 91px;
+        float: left;
+        text-align: left;
+        .banner_title {
+          width: 400px;
+          height: 36px;
+          font-family: MicrosoftYaHei-Bold;
+          font-size: 36px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 28px;
+          letter-spacing: 2px;
+          color: #ffffff;
+        }
+        .description {
+          margin-top: 40px;
+          width: 609px;
+          height: 105px;
+          font-family: MicrosoftYaHei;
+          font-size: 16px;
+          line-height: 30px;
+          color: #c5cff7;
+        }
+        .btn_p {
+          text-align: center;
+          margin-top: 66px;
+          .manageControl {
+            width: 162px;
+            height: 42px;
+            line-height: 42px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 21px;
+            font-size: 16px;
+            color: #ffffff;
+            transition: all 0.3s;
+            &.left {
+              background-color: #333333;
+              &:hover {
+                background-color: #666;
+              }
+            }
+            &.right {
+              height: 40px;
+              line-height: 40px;
+              margin-left: 20px;
+              border: solid 1px #ffffff;
+              &:hover {
+                background-color: #666;
+              }
+            }
+          }
+        }
+      }
+      i.logo_lmis {
+        position: absolute;
+        right: 20px;
+        top: 80px;
+        width: 526px;
+        height: 329px;
+        background: url("../../assets/img/info/lmis-pc/logo.png");
+        background-size: 100% 100%;
+      }
+    }
+  }
+  .page_part {
+    position: relative;
+    .title {
+      height: 33px;
+      padding-top: 72px;
+      font-family: MicrosoftYaHeiLight;
+      font-size: 34px;
+      line-height: 30px;
+      color: #333333;
+      text-align: center;
+    }
+  }
+  .function {
+    height: 356px;
+    background-color: #fff;
+    ul {
+      li {
+        float: left;
+        width: 150px;
+        padding: 80px 25px 0px;
+        text-align: center;
+        i {
+          position: relative;
+          &.plan {
+            width: 64px;
+            height: 64px;
+            background-image: url("../../assets/img/info/lmis-pc/plan.png");
+            background-size: 100% 100%;
+          }
+          &.logistics {
+            width: 64px;
+            height: 64px;
+            background-image: url("../../assets/img/info/lmis-pc/logistics.png");
+            background-size: 100% 100%;
+          }
+          &.store {
+            width: 64px;
+            height: 64px;
+            background-image: url("../../assets/img/info/lmis-pc/store.png");
+            background-size: 100% 100%;
+          }
+          &.safety {
+            width: 64px;
+            height: 64px;
+            background-image: url("../../assets/img/info/lmis-pc/safety.png");
+            background-size: 100% 100%;
+          }
+          &.general {
+            width: 64px;
+            height: 64px;
+            background-image: url("../../assets/img/info/lmis-pc/general.png");
+            background-size: 100% 100%;
+          }
+          &.equipment {
+            width: 64px;
+            height: 64px;
+            background-image: url("../../assets/img/info/lmis-pc/equipment.png");
+            background-size: 100% 100%;
+          }
+        }
+        .sub_title {
+          font-family: MicrosoftYaHei-Bold;
+          font-size: 18px;
+          line-height: 30px;
+          color: #333333;
+          font-weight: bold;
+        }
+        span {
+          display: inline-block;
+          font-size: 13px;
+          line-height: 18px;
+          color: #666666;
+        }
+      }
+    }
+  }
+  .data_manage {
+    height: 799px;
+    background: url("../../assets/img/info/lmis-pc/data_manage_bg.png");
+    background-size: 100% 100%;
+
+    .manage-view {
+      margin-top: 63px;
+      position: relative;
+      i.data_manage_icon {
+        position: absolute;
+        left: 0;
+        width: 670px;
+        height: 491px;
+        background-image: url("../../assets/img/info/lmis-pc/data_manage_icon.png");
+        background-size: 100% 100%;
+      }
+      .right-text-view {
+        margin-top: 91px;
+        list-style: none;
+        position: absolute;
+        right: 0;
+        li {
+          margin-bottom: 43px;
+          .common_icon {
+            width: 9px;
+            float: left;
+            height: 10px;
+            background-color: #2876fe;
+            border-radius: 50%;
+            margin-top: 10px;
+            margin-right: 6px;
+          }
+          .sub_title {
+            width: 328px;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: 0px;
+            color: #333333;
+          }
+        }
+      }
+    }
+  }
+  .knowledge-view {
+    height: 773px;
+
+    .manage-view {
+      margin-top: 63px;
+      position: relative;
+      i.data_manage_icon {
+        position: absolute;
+        left: 0;
+        width: 856px;
+        height: 421px;
+        background-image: url("../../assets/img/info/lmis-pc/knowlege_img.png");
+        background-size: 100% 100%;
+      }
+      .right-text-view {
+        margin-top: 30px;
+        list-style: none;
+        position: absolute;
+        right: 0;
+        li {
+          margin-bottom: 36px;
+          .common_icon {
+            width: 9px;
+            float: left;
+            height: 10px;
+            background-color: #2876fe;
+            border-radius: 50%;
+            margin-top: 10px;
+            margin-right: 6px;
+          }
+          .sub_title {
+            width: 215px;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 0px;
+            color: #333333;
+          }
+        }
+      }
+    }
+  }
+  .store-manage {
+    height: 759px;
+
+    .img-view {
+      position: relative;
+      margin-top: 50px;
+      img {
+        position: absolute;
+        left: 50%;
+        margin-left: -464.5px;
+        width: 929px;
+        height: 488px;
+      }
+    }
+  }
+  .picture-manage {
+    height: 649px;
+    background-image: url("../../assets/img/info/lmis-pc/picture_bg.png");
+    background-size: 100% 100%;
+    .title {
+      color: white;
+    }
+    .img-view {
+      position: relative;
+      margin-top: 50px;
+      img {
+        position: absolute;
+        left: 50%;
+        margin-left: -600px;
+        width: 1200px;
+        height: 373px;
+      }
+    }
+  }
+  .transport_flow {
+    height: 627px;
+    .process-text {
+      padding: 0 18%;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 24px;
+      letter-spacing: 0px;
+      color: #333333;
+      text-indent: 40px;
+    }
+    ul {
+      width: 900px;
+      position: relative;
+      left: 50%;
+      margin-top: 50px;
+      margin-left: -450px;
+      li {
+        width: 150px;
+        padding: 145px 25px 30px;
+        text-align: center;
+        position: relative;
+        float: left;
+        &.center {
+          margin: 0 150px;
+        }
+        i {
+          position: absolute;
+          left: 50%;
+          top: 15px;
+          z-index: 9;
+          &.platform {
+            top: 25px;
+            width: 97px;
+            margin-left: -48px;
+            height: 132px;
+            background-image: url("../../assets/img/info/lmis-pc/platform.png");
+            background-size: 100% 100%;
+            z-index: 8;
+          }
+          &.nc {
+            width: 26px;
+            margin-left: -13px;
+            height: 33px;
+            background-image: url("../../assets/img/info/lmis-pc/nc.png");
+            background-size: 100% 100%;
+          }
+          &.order {
+            width: 36px;
+            margin-left: -18px;
+            height: 29px;
+            background-image: url("../../assets/img/info/lmis-pc/order.png");
+            background-size: 100% 100%;
+          }
+          &.order_car {
+            width: 40px;
+            margin-left: -20px;
+            height: 40px;
+            background-image: url("../../assets/img/info/lmis-pc/order_car.png");
+            background-size: 100% 100%;
+          }
+          &.cost_manage {
+            width: 35px;
+            margin-left: -18px;
+            height: 29px;
+            background-image: url("../../assets/img/info/lmis-pc/cost_manage.png");
+            background-size: 100% 100%;
+          }
+          &.complete {
+            width: 27px;
+            margin-left: -13px;
+            height: 36px;
+            background-image: url("../../assets/img/info/lmis-pc/complete.png");
+            background-size: 100% 100%;
+          }
+          &.task {
+            width: 30px;
+            margin-left: -15px;
+            height: 31px;
+            background-image: url("../../assets/img/info/lmis-pc/task.png");
+            background-size: 100% 100%;
+          }
+          &.arrow_icon {
+            &.to_right {
+              width: 94px;
+              height: 14px;
+              left: 215px;
+              top: 91px;
+              background-image: url("../../assets/img/info/lmis-pc/to_right.png");
+              background-size: 100% 100%;
+            }
+            &.to_left {
+              width: 94px;
+              height: 14px;
+              left: 215px;
+              top: 91px;
+              background-image: url("../../assets/img/info/lmis-pc/to_left.png");
+              background-size: 100% 100%;
+            }
+            &.to_bottom {
+              width: 14px;
+              height: 32px;
+              left: 94px;
+              top: 177px;
+              background-image: url("../../assets/img/info/lmis-pc/to_bottom.png");
+              background-size: 100% 100%;
+            }
+          }
+        }
+        .sub_title {
+          font-size: 16px;
+          line-height: 30px;
+          color: #666666;
+        }
+      }
+    }
+  }
+  .safety_manage {
+    height: 421px;
+    background: url("../../assets/img/info/lmis-pc/safety_manage_bg.png");
+    background-size: 100% 100%;
+    margin-top: 73px;
+    .title {
+      position: absolute;
+      padding: 0px;
+      top: -73px;
+      width: 100%;
+      font-family: MicrosoftYaHeiLight;
+      font-size: 34px;
+      line-height: 30px;
+      color: #333333;
+    }
+    ul {
+      width: 1000px;
+      position: relative;
+      left: 50%;
+      margin-left: -480px;
+      li {
+        width: 250px;
+        padding-left: 100px;
+        height: 140px;
+        text-align: left;
+        position: relative;
+        &.left {
+          float: left;
+          padding-right: 300px;
+        }
+        &.right {
+          float: right;
+        }
+        i {
+          position: absolute;
+          left: 0px;
+          top: 38px;
+          &.standard {
+            width: 48px;
+            height: 60px;
+            background-image: url("../../assets/img/info/lmis-pc/standard.png");
+            background-size: 100% 100%;
+          }
+          &.examine {
+            width: 48px;
+            height: 60px;
+            background-image: url("../../assets/img/info/lmis-pc/examine.png");
+            background-size: 100% 100%;
+          }
+          &.check {
+            width: 48px;
+            height: 61px;
+            background-image: url("../../assets/img/info/lmis-pc/check.png");
+            background-size: 100% 100%;
+          }
+          &.org {
+            width: 48px;
+            height: 61px;
+            background-image: url("../../assets/img/info/lmis-pc/org.png");
+            background-size: 100% 100%;
+          }
+          &.emergency {
+            width: 48px;
+            height: 60px;
+            background-image: url("../../assets/img/info/lmis-pc/emergency.png");
+            background-size: 100% 100%;
+          }
+          &.train {
+            width: 48px;
+            height: 60px;
+            background-image: url("../../assets/img/info/lmis-pc/train.png");
+            background-size: 100% 100%;
+          }
+        }
+        .sub_title {
+          font-family: MicrosoftYaHei-Bold;
+          font-size: 18px;
+          line-height: 30px;
+          letter-spacing: 1px;
+          color: #4587df;
+          padding-top: 25px;
+          padding-bottom: 21px;
+          font-weight: bold;
+        }
+        span {
+          font-size: 14px;
+          line-height: 30px;
+          letter-spacing: 1px;
+          color: #aca8a8;
+        }
+      }
+    }
+  }
+  .general_manage {
+    height: 1106px;
+    .title {
+      font-family: MicrosoftYaHeiLight;
+      font-size: 34px;
+      line-height: 30px;
+      color: #333333;
+      padding-bottom: 45px;
+    }
+    .description {
+      width: 994px;
+      margin: 0 auto;
+      font-size: 14px;
+      line-height: 30px;
+      color: #888888;
+      text-indent: 28px;
+    }
+    i.general_manage_icon {
+      position: relative;
+      top: 63px;
+      left: 50%;
+      width: 1047px;
+      height: 687px;
+      margin-left: -523px;
+      background-image: url("../../assets/img/info/lmis-pc/general_manage_icon.png");
+      background-size: 100% 100%;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.icons {
+    padding: 0 20px 10px 20px;
+    -webkit-column-count: 5;
+    -moz-column-count: 5;
+    column-count: 5;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+}
+
+.icons div {
+    margin-bottom: 5px;
+    line-height: 2em;
+}
+
+.icons div span {
+    cursor: pointer;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: calc(100% - 90px);
+    overflow: hidden;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.icons div code:hover,
+.icons div span:hover,
+.icons div i:hover {
+    color: #3c90be;
+}
+
+.icons div code:hover {
+    border-color: #3c90be;
+}
+
+.icons div code {
+    border: 1px solid #ddd;
+    width: 46px;
+    margin-left: 2px;
+    margin-right: 4px;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.icons div i {
+    display: inline-block;
+    width: 32px;
+    height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    line-height: 24px;
+}
+
+.icons .mdi:before {
+    font-size: 24px;
+}
+
+.active-item {
+    background: #e1f3fb;
+    color: #40C3D5;
+}

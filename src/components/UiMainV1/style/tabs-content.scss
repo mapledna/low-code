@@ -1,0 +1,14 @@
+/**
+ * 选项卡：页面内容中的选项卡
+ */
+.ui-main__tab-pane {
+    .el-tabs {
+        .el-tabs__item {
+            border-left-color: $--tab-item-border-color; // new
+
+            &.is-active {
+                border-bottom-color: $--tab-item-active-bg-color; // new
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+/**
+ * 布局效果：tabs 与 header 合并
+ */
+.ui-main-v1 {
+    /* 布局变量 */
+    @import "@/components/UiMain/style/variable";
+    // 布局-选项卡
+    $main-tabs-item-height: $--header-height;
+    $main-tabs-item-padding-h: 18px;
+    $main-tabs-item-active-bg-color: $--layout-background-color-base;
+    // 布局-面包屑
+    $breadcrumb-padding-v: 8px;
+
+    /* 基础 */
+    @import "@/components/UiMain/style";
+
+    /* 布局 */
+    @import "./layout";
+
+    /* 布局-菜单 */
+    @import "./menu";
+
+    /* 顶部&内容选项卡 */
+    @import "./tabs-content"; // 页面内容中的选项卡
+}

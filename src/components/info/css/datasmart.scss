@@ -1,0 +1,312 @@
+.productdetail {
+  overflow: auto;
+  height: 100%;
+
+  font-family: PingFangSC-Medium, PingFang SC;
+}
+.banner {
+  height: 440px;
+  width: 100%;
+  background: url(../../assets/img/info/datasmart/img_banner.png);
+  background-size: 100% 100%;
+}
+.banner .banner_content {
+  margin-left: 120px; /* max-width: 1200px; */
+  padding-top: 140px;
+  text-align: left;
+}
+.banner .banner_content .banner_title {
+  margin: 0 0 16px;
+  color: #ffffff;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-align: left;
+}
+.banner .banner_content .description {
+  font-size: 13px;
+  color: #ffffff;
+  margin-bottom: 24px;
+  display: inline-block;
+  font-weight: 400;
+}
+.experience {
+  background: #409eff;
+  line-height: 40px;
+}
+.manageControl {
+  border: 1px solid #ffffff;
+  line-height: 38px;
+}
+.proBtn {
+  display: inline-block;
+  width: 176px;
+  color: #ffffff !important;
+  font-size: 14px;
+  margin-right: 24px;
+  cursor: pointer;
+  text-align: center;
+}
+.second_part .container_scene_d {
+  background: #ffffff;
+  padding: 100px 0 80px;
+}
+
+.container {
+  width: 1120px;
+  margin: auto;
+}
+.part_title {
+  font-size: 28px;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 0px 0 40px 0;
+  line-height: 78px;
+}
+.container-scene {
+  ::v-deep .el-card {
+    margin-bottom: 40px;
+    .el-card__body {
+      padding: 28px 32px;
+      &::after {
+        display: block;
+        content: "";
+        clear: both;
+      }
+      .title_img {
+        width: 88px;
+        height: 88px;
+        margin-right: 32px;
+        display: block;
+        float: left;
+      }
+      .text_title {
+        font-size: 16px;
+        font-weight: 500;
+        color: #0a0d31;
+        line-height: 22px;
+        margin-bottom: 10px;
+      }
+      .text {
+        font-size: 14px;
+        font-weight: 400;
+        color: #989ab4;
+        line-height: 20px;
+      }
+    }
+  }
+}
+.third_part {
+  background: #eef2fb;
+  padding: 100px 0 80px;
+  ::v-deep.el-tabs {
+    .el-tabs__header {
+      margin: 0;
+    }
+    .el-tabs__nav {
+      width: 100%;
+      .el-tabs__active-bar {
+        background-color: #409eff;
+      }
+      .el-tabs__item {
+        width: 25%;
+        text-align: center;
+        padding-bottom: 30px;
+        height: 120px;
+        line-height: 24px;
+        .title_img {
+          width: 64px;
+          height: 64px;
+        }
+        p {
+          font-size: 15px;
+          font-weight: 400;
+          color: #494c77;
+          line-height: 21px;
+
+          font-family: PingFangSC-Regular, PingFang SC;
+        }
+        .arrow_img {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          margin-top: -12px;
+          width: 30px;
+          height: 24px;
+        }
+      }
+      .is-active {
+        .title_img {
+        }
+        p {
+          color: #409eff;
+        }
+      }
+    }
+    .el-tab-pane {
+      height: 397px;
+      background: #ffffff;
+      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.08);
+      .card_content {
+        padding: 64px 80px;
+        h3 {
+          font-size: 24px;
+          font-weight: 400;
+          color: #333333;
+          line-height: 33px;
+          letter-spacing: 1px;
+          margin-bottom: 16px;
+        }
+        .feature_text {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 38px;
+          color: #858383;
+
+          .status_radio {
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            background: #409eff;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-right: 8px;
+          }
+          span {
+            font-weight: 500;
+            color: #333;
+          }
+          .text_value {
+            color: #858383;
+          }
+        }
+      }
+    }
+  }
+}
+
+.fourth_part {
+  padding: 100px 0 80px;
+  .title_img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .productdetail {
+    .banner {
+      height: 211px;
+      .banner_content {
+        margin: 0;
+        padding: 39px 32px;
+        .banner_title {
+          font-size: 28px;
+        }
+        .description {
+          font-size: 13px;
+          line-height: 18px;
+          margin-bottom: 12px;
+        }
+        .experience {
+          width: 120px;
+          height: 32px;
+          line-height: 32px;
+        }
+        .manageControl {
+          display: none;
+        }
+      }
+    }
+    ::v-deep .tabList {
+      display: none;
+    }
+    .container {
+      width: 100%;
+      .part_title {
+        font-size: 20px;
+        line-height: 28px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        padding-bottom: 20px;
+      }
+    }
+    .second_part {
+      .container_scene_d {
+        padding: 48px 26px;
+      }
+      ::v-deep .el-card {
+        .el-card__body {
+          padding: 6px 18px;
+          padding-right: 0px;
+        }
+        .title_img {
+          width: 86px;
+          height: 86px;
+          margin-right: 18px;
+        }
+        .text_title {
+          font-size: 16px;
+          color: #0a0d31;
+        }
+        .text {
+          font-size: 13px;
+          color: #989ab4;
+        }
+      }
+    }
+    .third_part {
+      padding: 48px 16px;
+      ::v-deep .el-tabs {
+        .el-tabs__nav {
+          .el-tabs__item {
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            margin-right: 14px;
+            height: 64px;
+            .title_img {
+              width: 32px;
+              height: 32px;
+            }
+            p {
+              display: none;
+            }
+            .arrow_img {
+              position: relative;
+              transform: rotate(90deg);
+              display: block;
+              margin: 8px auto;
+              margin-top: 0px;
+              width: 12px;
+              height: 15px;
+            }
+          }
+        }
+        .el-tabs__content {
+          .card_content {
+            padding: 24px 16px;
+            height: 406px;
+            box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.08);
+            h3 {
+              font-size: 15px;
+              color: #333333;
+              margin-bottom: 8px;
+            }
+            .feature_text {
+              line-height: 24px;
+            }
+            .text_value {
+              display: block;
+              color: #999999;
+            }
+          }
+        }
+      }
+    }
+    .fourth_part {
+      padding: 48px 10px;
+    }
+  }
+}

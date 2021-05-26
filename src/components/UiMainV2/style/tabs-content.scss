@@ -1,0 +1,22 @@
+/**
+ * 选项卡：页面内容中的选项卡
+ */
+.ui-main__tab-pane {
+
+    .el-tabs {
+        background: $--tab-header-bg-color;
+
+        &>.el-tabs__header {
+            border-bottom-color: $--tab-header-bg-color;
+
+            .el-tabs__nav {
+                background-color: $--tab-item-bg-color;
+            }
+
+            .el-tabs__item {
+                border-radius: $--border-radius-small;
+                border-bottom-width: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+/**
+ * 布局组件-菜单
+ */
+.menu-container {
+
+    .el-menu-item,
+    .el-submenu__title {
+        position: relative;
+        height: $menu-item-height;
+        line-height: $menu-item-height;
+        padding-left: ($menu-item-padding-h + $menu-icon-height + 5px) !important;
+        padding-right: $menu-item-padding-h !important;
+    }
+
+    /* 下级菜单 */
+    .el-menu .el-menu {
+
+        .el-menu-item,
+        .el-submenu__title {
+            color: $menu-open-font-color !important;
+            background-color: $menu-open-bg-color !important;
+
+            &:hover {
+                color: $menu-hover-font-color !important;
+                background-color: $menu-hover-bg-color !important;
+            }
+        }
+    }
+}

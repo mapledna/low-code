@@ -1,0 +1,25 @@
+@import "@/styles/theme-default/utils/index.scss";
+$padding: 20px;
+.attr-edit-drawer {
+  .el-dialog__wrapper {
+    .el-drawer__header {
+      margin-bottom: $padding;
+    }
+    .el-drawer__body {
+      padding-left: $padding / 2;
+      padding-right: $padding;
+      overflow-y: auto;
+    }
+  }
+  .form-item-btm {
+    margin-bottom: 10px;
+  }
+}
+/* 表单 */
+.form-item-mg-top {
+  margin-top: $--size-inline-block;
+}
+/* 代码编辑器 */
+.formula-help .formula-info{
+  margin-bottom: $--size-sm;
+}

@@ -1,0 +1,8 @@
+// HACK: 与 el-col 混排的行内布局。间距参考 el-table 顶部按钮效果。
+.col-inline {
+  float: left;
+  margin-right: $--size-inline-block;
+  &:last-child {
+    margin-right: 0;
+  }
+}

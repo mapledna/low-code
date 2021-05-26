@@ -1,0 +1,30 @@
+.action-bar {
+  position: relative;
+  height: $action-bar-height;
+  text-align: right;
+  padding: 0 15px;
+  box-sizing: border-box;
+  border: 1px solid $--border-color-light;
+  border-top: none;
+  border-left: none;
+  & .el-button + .el-button {
+    margin-left: 15px;
+  }
+
+  & i {
+    // font-size: 20px;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+  }
+  .delete-btn {
+    color: $--color-danger;
+  }
+}
+.logo-wrapper {
+  position: relative;
+  height: $action-bar-height;
+  background: #fff;
+  border-bottom: 1px solid $--border-color-light;
+  box-sizing: border-box;
+}

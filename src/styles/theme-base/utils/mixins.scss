@@ -1,0 +1,62 @@
+// NOTE: 务必保证已引入 variable 文件
+
+/* 清除浮动 */
+@mixin clearfix() {
+  zoom: 1;
+
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+    overflow: hidden;
+  }
+}
+
+@mixin wrap($is-wrap: true) {
+  @if $is-wrap==true {
+    word-wrap: break-word;
+    word-break: break-all;
+  } @else {
+    white-space: nowrap;
+  }
+}
+
+@mixin ellipsis($line-clamp: 1, $width: null) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @if $width {
+    width: $width;
+  }
+
+  @if abs($line-clamp) >1 {
+    display: -webkit-box !important;
+    -webkit-line-clamp: $line-clamp;
+    @include wrap(true);
+  } @else {
+    @include wrap(false);
+  }
+}
+
+// 三角
+@mixin triangle($direction, $size, $color) {
+  content: "";
+  width: 0;
+  height: 0;
+  border-width: $size;
+  border-style: solid;
+  //   border-color: transparent;
+  @if $direction==top {
+    border-color: transparent transparent $color;
+  } @else if $direction==right {
+    border-color: transparent transparent transparent $color;
+  } @else if $direction==bottom {
+    border-color: $color transparent transparent; // top
+  } @else if $direction==left {
+    border-color: transparent $color transparent transparent;
+  }
+}

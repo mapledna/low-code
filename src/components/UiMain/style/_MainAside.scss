@@ -1,0 +1,76 @@
+/**
+ * 主框架左侧菜单
+ */
+.ui-main__aside {
+  overflow: hidden;
+  color: $aside-font-color;
+  background-color: $aside-bg-color;
+  //   &.el-aside {
+  //     width: $aside-width !important;
+  //     display: flex;
+  //     flex-direction: column;
+  //   }
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: $aside-width;
+}
+
+/**
+ * 顶部logo和系统名称区域
+ */
+.ui-main__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: $aside-top-height;
+  line-height: $aside-top-height;
+  text-align: center;
+  font-size: $--font-size-base;
+  font-weight: 500;
+  color: $aside-font-color;
+  background-color: $aside-top-bg-color;
+
+  &--icon {
+    box-sizing: border-box;
+    display: inline-block;
+    max-height: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    vertical-align: middle;
+
+    &.with-title {
+      height: $--font-line-height-base + 10; // 上下边距共 10px
+    }
+  }
+
+  &--title {
+    display: inline-block;
+
+    &.with-icon {
+      &::before {
+        content: "|";
+        display: inline-block;
+        padding-right: 5px;
+        font-size: 80%;
+      }
+    }
+  }
+}
+
+/**
+ * 可滚动的菜单容器
+ */
+.ui-main__menu-warp {
+  position: absolute;
+  top: $aside-top-height;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  .el-scrollbar__wrap {
+    overflow-x: auto;
+  }
+}

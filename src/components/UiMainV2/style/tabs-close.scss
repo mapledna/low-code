@@ -1,0 +1,22 @@
+/* 选项卡关闭按钮 */
+.el-tabs>.el-tabs__header .el-tabs__item {
+    padding: 0 $--tab-item-padding-h !important;
+
+    .el-icon-close {
+        position: absolute;
+        font-size: $--font-size-base/2;
+        top: 0px;
+        right: 1px;
+        color: $--tab-item-active-font-color;
+
+        &:hover {
+            color: $--color-white;
+            background-color: $--color-danger;
+        }
+    }
+
+    &:hover .el-icon-close,
+    &.is-active .el-icon-close {
+        opacity: .8;
+    }
+}

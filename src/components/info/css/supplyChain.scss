@@ -1,0 +1,388 @@
+.config {
+  overflow: auto;
+  .con_part {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .banner {
+    background: url("../../assets/img/info/common/banner_bg.png");
+    background-size: 100% 100%;
+
+    .title {
+      font-family: MicrosoftYaHei-Bold;
+      font-size: 36px;
+      line-height: 28px;
+      letter-spacing: 2px;
+      color: #ffffff;
+      margin-top: 127px;
+      margin-bottom: 18px;
+    }
+    .sub_title {
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: 0px;
+      color: #c5cff7;
+      margin-top: 49px;
+    }
+    .btn_p {
+      text-align: center;
+      margin-top: 63px;
+      .manageControl {
+        width: 162px;
+        height: 42px;
+        line-height: 42px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 21px;
+        font-size: 16px;
+        color: #ffffff;
+        transition: all 0.3s;
+        &.left {
+          background-color: #333333;
+          &:hover {
+            background-color: #666;
+          }
+        }
+        &.right {
+          height: 40px;
+          line-height: 40px;
+          margin-left: 20px;
+          border: solid 1px #ffffff;
+          &:hover {
+            background-color: #666;
+          }
+        }
+      }
+    }
+  }
+  .manage_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 137px 16% 185px 16%;
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      span {
+        font-size: 24px;
+        font-weight: normal;
+        font-stretch: normal;
+        line-height: 26px;
+        color: #333333;
+        margin-bottom: 26px;
+      }
+      div {
+        width: 271px;
+        height: 114px;
+        font-family: "MicrosoftYaHei";
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        line-height: 26px;
+        color: #6a6a6a;
+      }
+      i {
+        margin-bottom: 38px;
+        &.store {
+          width: 154px;
+          height: 154px;
+          background: url("../../assets/img/info/supply-chain-pc/round_one.png");
+          background-size: 100% 100%;
+        }
+        &.storage {
+          width: 154px;
+          height: 154px;
+          background: url("../../assets/img/info/supply-chain-pc/round_two.png");
+          background-size: 100% 100%;
+        }
+        &.report {
+          width: 154px;
+          height: 154px;
+          background: url("../../assets/img/info/supply-chain-pc/round_three.png");
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+  .blue-bg {
+    background: url("../../assets/img/info/supply-chain-pc/lever_bg.png");
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 66px;
+    padding-bottom: 80px;
+    span {
+      font-size: 34px;
+      line-height: 30px;
+      color: white;
+      margin-bottom: 86px;
+    }
+    img {
+      width: 614px;
+      height: 572px;
+    }
+    .img-view {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+      .text-view {
+        font-size: 24px;
+        line-height: 24px;
+        color: white;
+        font-weight: bold;
+        .content {
+          width: 316px;
+          font-size: 14px;
+          line-height: 24px;
+          font-weight: 400;
+          margin-top: 20px;
+        }
+      }
+    }
+    .text-right-view {
+      margin-left: -42px;
+      box-sizing: border-box;
+    }
+    .bottom-text {
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+      margin-top: 50px;
+    }
+  }
+  .adv_view {
+    background: url("../../assets/img/info/supply-chain-pc/adv_bg.png");
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 66px;
+    padding-bottom: 79px;
+    span {
+      font-size: 34px;
+      line-height: 30px;
+      color: #333333;
+    }
+    img {
+      width: 449px;
+      height: 457px;
+    }
+    .img-view {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 63px;
+
+      .text-view {
+        font-size: 24px;
+        line-height: 24px;
+        color: #53abfd;
+        .content {
+          width: 364px;
+          font-size: 14px;
+          line-height: 24px;
+          color: #333333;
+          margin-top: 20px;
+        }
+      }
+    }
+    .text-right-view {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .solution_framework {
+    padding: 92px 0 0 0;
+    .title {
+      font-size: 34px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 30px;
+      letter-spacing: 0px;
+      color: #333333;
+      text-align: center;
+    }
+    .ul_title {
+      position: relative;
+      left: 50%;
+      margin: 46px 0 66px -207px;
+      // margin-top: 46px;
+      // height: 160px;
+      display: inline-block;
+      li {
+        width: 210px;
+        height: 50px;
+        float: left;
+        border: solid 1px #d7d7e3;
+        font-size: 16px;
+        line-height: 48px;
+        text-align: center;
+        color: #6a6a6a;
+        &.left {
+          border-radius: 3px 0px 0px 3px;
+          border-right-color: transparent;
+        }
+        &.right {
+          border-radius: 0px 3px 3px 0px;
+        }
+        &:hover,
+        &.active {
+          border: solid 1px #076bf2;
+          color: #076bf2;
+        }
+      }
+    }
+   
+    .con_sub_part {
+      width: 100%;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .title-text {
+        font-size: 18px;
+        margin-top: 46px;
+        margin-bottom: 20px;
+        line-height: 26px;
+        letter-spacing: 0px;
+        color: #333333;
+        font-weight: bold;
+        text-align: center;
+      }
+      .conten-text {
+        text-align: center;
+        width: 772px;
+        font-family: "MicrosoftYaHei";
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0px;
+        color: #6a6a6a;
+      }
+      &.active {
+        opacity: 1;
+      }
+      .sub_title {
+        font-family: MicrosoftYaHei-Bold;
+        font-size: 36px;
+        line-height: 50px;
+        color: #333333;
+        margin-bottom: 38px;
+      }
+      i {
+        &.microservice {
+          width: 1180px;
+          height: 795px;
+          background: url("../../assets/img/info/supply-chain-pc/plat_one.png");
+          background-size: 100% 100%;
+        }
+        &.technology {
+          width: 1180px;
+          height: 795px;
+          background: url("../../assets/img/info/supply-chain-pc/plat_two.png");
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+  .bottom-text-view{
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 98px;
+    margin-bottom: 95px;
+    .title-text {
+      font-size: 18px;
+      margin-bottom: 20px;
+      line-height: 26px;
+      letter-spacing: 0px;
+      color: #333333;
+      font-weight: bold;
+      text-align: center;
+    }
+    .conten-text {
+      text-align: center;
+      width: 782px;
+      font-family: "MicrosoftYaHei";
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 0px;
+      color: #6a6a6a;
+    }
+  }
+  .function_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 95%;
+    margin-top: 84px;
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      span {
+        font-size: 18px;
+        line-height: 20px;
+        color: #333333;
+        font-weight: bold;
+      }
+
+      i {
+        margin-bottom: 14px;
+
+        &.store {
+          width: 43px;
+          height: 33px;
+          background: url("../../assets/img/info/supply-chain-pc/footer_one.png");
+          background-size: 100% 100%;
+        }
+        &.storage {
+          width: 37px;
+          height: 38px;
+          background: url("../../assets/img/info/supply-chain-pc/footer_two.png");
+          background-size: 100% 100%;
+        }
+        &.report {
+          width: 51px;
+          height: 37px;
+          background: url("../../assets/img/info/supply-chain-pc/footer_three.png");
+          background-size: 100% 100%;
+        }
+        &.warn {
+          width: 53px;
+          height: 36px;
+          background: url("../../assets/img/info/supply-chain-pc/footer_four.png");
+          background-size: 100% 100%;
+        }
+        &.check {
+          width: 40px;
+          height: 40px;
+          background: url("../../assets/img/info/supply-chain-pc/footer_five.png");
+          background-size: 100% 100%;
+        }
+        &.system {
+          width: 27px;
+          height: 41px;
+          background: url("../../assets/img/info/supply-chain-pc/footer_six.png");
+          background-size: 100% 100%;
+        }
+        &.last {
+          width: 41px;
+          height: 35px;
+          background: url("../../assets/img/info/supply-chain-pc/footer_seven.png");
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+}

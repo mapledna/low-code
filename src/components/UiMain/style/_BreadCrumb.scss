@@ -1,0 +1,16 @@
+/**
+ * 面包屑导航
+ */
+.ui-main__breadcrumb {
+    height: auto; // HACK: IE 兼容
+    line-height: $breadcrumb-height;
+    margin: 0;
+    padding: $breadcrumb-padding-v $breadcrumb-padding-h;
+    font-size: $breadcrumb-font-size;
+    color: $breadcrumb-font-color;
+
+    .last {
+        font-size: $breadcrumb-active-font-size;
+        color: $breadcrumb-active-font-color;
+    }
+}

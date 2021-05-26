@@ -1,0 +1,72 @@
+【表格搜索表单-配置数据】
+
+searchData: [{
+  is_required: 0,
+  label: "审核状态",
+  param_max: null,
+  param_min: null,
+  paramvalue: "GetDictionary('1282590391801380866')",
+  valid_rule: null,
+  value: "audit_status",
+  widgettype: 11,
+}]
+
+searchOption: {
+  audit_status: {
+    label: "label",
+    pid: "pid",
+    value: "id",
+    data: [{
+      id: "0",
+      label: "待审核",
+      selected: 0,
+    }]
+  }
+}
+
+【表格搜索表单-生成数据】
+formData: {
+  field101: [],
+  field101Table: {
+    "search": {},
+    "searchOptions": {
+      "audit_status": []
+    },
+  }
+}
+
+【表格搜索表单-生成模板】
+<el-form :inline=true class="form-inline table-search-form" @submit.native.prevent>
+  <el-form-item label='审核状态'>
+    <el-select 
+      v-model="formData.field101Table.search.audit_status" 
+      clearable 
+      filterable 
+      size="small"
+      :multiple=true 
+      placeholder="请选择"
+    >
+      <el-option 
+        v-for="(list, index) in formData.field101Table.searchOptions.audit_status"
+        :key="index" 
+        :label="list.label" 
+        :value="list.id" 
+      />
+    </el-select>
+  </el-form-item>
+  <el-button 
+    native-type="submit" 
+    type="primary" 
+    icon="el-icon-search" 
+    @click="tableData('field101')"
+  >
+    搜索
+  </el-button>
+  <el-button 
+    native-type="reset" 
+    icon="el-icon-refresh"
+    @click="resetTableForm('field101')"
+  >
+    重置
+  </el-button>
+</el-form>

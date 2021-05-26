@@ -1,0 +1,51 @@
+/**
+ * 选项卡：
+ * 根据变量重制页面内容中的选项卡。可用于所有主题。
+ */
+
+.ui-main__tab-pane {
+    .el-tab-pane {
+        // NOTE: 页面上 el-col 带有左右边距，而且内容没有包 el-row。因此这里清楚浮动，且只设置上下边距
+        @include clearfix();
+        padding: $--tab-pane-padding-v 0;
+    }
+
+    .el-tabs {
+        &>.el-tabs__header {
+            margin: 0;
+            background: $--tab-header-bg-color;
+            border-bottom-color: $--tab-item-border-color;
+
+            .el-tabs__nav {
+                height: $--tab-header-height;
+                border-width: $--tab-item-border-width;
+                border-color: $--tab-item-border-color
+            }
+
+            .el-tabs__item .el-icon-close {
+                font-size: $--font-size-base;
+            }
+        }
+
+        .el-tabs__item {
+            height: $--tab-header-height - $--tab-item-border-width * 2;
+            line-height: $--tab-header-height - $--tab-item-border-width * 2;
+            padding: 0 $--tab-item-padding-h;
+            color: $--tab-item-font-color;
+            background: $--tab-item-bg-color;
+            user-select: none;
+            border-left-width: $--tab-item-border-width;
+            transition: all .1s;
+
+            &:hover {
+                // color: $--tab-item-active-font-color;
+                background: $--tab-item-active-bg-color;
+            }
+
+            &.is-active {
+                color: $--tab-item-active-font-color;
+                background: $--tab-item-active-bg-color;
+            }
+        }
+    }
+}
