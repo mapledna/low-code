@@ -6,9 +6,9 @@ API地址：api/build/database/executeSqls
  */
 
 // 固定参数
-const parameter = { executeSqlList: [{ sqlId: '1265130884821331975' }] }
+export const parameter = { executeSqlList: [{ sqlId: '1265130884821331975' }] }
 
-const result = {
+export const result = {
   code: 0,
   data: {
     table_0: [
@@ -709,4 +709,3 @@ const result = {
   },
   message: 'success'
 }
-export default result

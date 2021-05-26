@@ -4,7 +4,7 @@ API地址：api/build/database/executeSqls
 参数：{"executeSqlList":[{"sqlId":"1282980172343468034","parameters":{}}]}
 */
 
-const parameter = {
+export const parameter = {
   executeSqlList: [{
     sqlId: '1255778887614492674',
     parameters: {
@@ -13,8 +13,7 @@ const parameter = {
   }]
 }
 
-
-const result = {
+export const result = {
   code: 0,
   data: {
     table_0: [

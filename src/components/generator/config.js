@@ -50,6 +50,10 @@ export const formConf = defaultFormConf
 export const basicComponents = [
   // ...Object.keys(basicConf).map(key => basicConf[key]),
   {
+    // 数据表格
+    ...basicConf['el-table']
+  },
+  {
     ...basicConf['el-button']
   },
   {
@@ -767,12 +771,7 @@ export const basicComponents = [
     document: 'https://element.eleme.cn/#/zh-CN/component/upload'
   },
   {
-    // 数据表格
     ...basicConf.listPicker
-  },
-  {
-    // 数据表格
-    ...basicConf['el-table']
   }
   // {
   //   label: '代码编辑',

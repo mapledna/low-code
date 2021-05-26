@@ -1,5 +1,7 @@
+/* eslint-disable no-underscore-dangle */
 /* eslint-disable camelcase */
 /* eslint-disable no-template-curly-in-string */
+
 import { exportDefault, getFunction, isEmpty } from '@/utils/index'
 import { ruleConf, formConf } from './config'
 import {
@@ -187,7 +189,8 @@ function buildAttributes(el, buildOpts) {
     const fieldId = getFieldId(el)
     // 设置默认值
     if (!isEmpty(el.modelValue)) {
-      const initParameters = el?.dataSource?.optionParams?.[`${fieldId}.initData`]?.parameters
+      const initParameters = el?.dataSource?.optionParams
+      // const initParameters = el?.dataSource?.optionParams?.[`${fieldId}.initData`]?.parameters
       if (initParameters) {
         // initParameters[el.valueKey] = el.modelValue
         initParameters[el.valueKey] = el.defaultValue
@@ -364,7 +367,6 @@ function buildAttributes(el, buildOpts) {
     // 表格按钮：顶部操作
     if (el.topEdit && el.topEdit.show && el.topEdit.options.length !== 0) {
       el.topEdit.options.forEach(btnEl => {
-        // eslint-disable-next-line no-underscore-dangle
         btnEl._parentFieldId = el.vModel
         // 顶部按钮自定义方法
         if (btnEl.displayFn) {
@@ -2852,7 +2854,7 @@ function getExportStr(conf, type = 'file', buildOpts, buildType) {
         ${conf.formRules}: {
           ${formRulesList.join('\n')}
         },
-        ${propsList.join('\n')}
+        ${(propsList || []).join('\n')}
         ${extraDataStr}
       }
     },

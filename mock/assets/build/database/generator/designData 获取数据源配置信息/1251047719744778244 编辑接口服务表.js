@@ -1,13 +1,13 @@
-/* 插入接口服务表
+/* 编辑接口服务表
 
 API地址：api/build/database/generator/designData
 参数：{"sourceId":【数据源ID】,"sourceType":【数据源类型】}
 
  */
 
-const parameter = { sourceId: '1251047719744778243', sourceType: 'data' }
+export const parameter = { sourceId: '1251047719744778244', sourceType: 'data' }
 
-const result = {
+export const result = {
   code: 0,
   data: {
     filter: {
@@ -103,6 +103,16 @@ const result = {
         label: '接口描述',
         param_min: null,
         value: 'description'
+      },
+      {
+        widgettype: 0,
+        is_required: 1,
+        valid_rule: null,
+        param_max: null,
+        paramvalue: null,
+        label: '接口ID',
+        param_min: null,
+        value: 'id'
       },
       {
         widgettype: 0,

@@ -5,9 +5,9 @@ API地址：api/build/database/generator/designData
 
  */
 
-const parameter = { sourceId: '1251047719744778242', sourceType: 'data' }
+export const parameter = { sourceId: '1251047719744778242', sourceType: 'data' }
 
-const result = {
+export const result = {
   code: 0,
   data: {
     result: [

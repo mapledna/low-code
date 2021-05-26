@@ -6,13 +6,13 @@ API地址：api/build/database/executeSqls
  */
 
 // 固定参数
-const parameter = {
+export const parameter = {
   executeSqlList: [
     { sqlId: '5', parameters: { category_id: '1257904396855046146' } }
   ]
 }
 
-const result = {
+export const result = {
   code: 0,
   data: {
     table_0: [
@@ -46,24 +46,24 @@ const result = {
         sql_code: 'select_rd_t_interface',
         id_code: '1251048221643583490'
       },
-      {
-        id: '1275377330300518404',
-        sql_name: '编辑接口服务取消审核',
-        sql_code: 'update_interface_audit0',
-        id_code: '1275377330300518404'
-      },
-      {
-        id: '1251063388007772164',
-        sql_name: '编辑接口服务审核通过',
-        sql_code: 'update_interface_audit1',
-        id_code: '1251063388007772164'
-      },
-      {
-        id: '1251065911397527556',
-        sql_name: '编辑接口服务过期',
-        sql_code: 'update_interface_audit3',
-        id_code: '1251065911397527556'
-      },
+      // {
+      //   id: '1275377330300518404',
+      //   sql_name: '编辑接口服务取消审核',
+      //   sql_code: 'update_interface_audit0',
+      //   id_code: '1275377330300518404'
+      // },
+      // {
+      //   id: '1251063388007772164',
+      //   sql_name: '编辑接口服务审核通过',
+      //   sql_code: 'update_interface_audit1',
+      //   id_code: '1251063388007772164'
+      // },
+      // {
+      //   id: '1251065911397527556',
+      //   sql_name: '编辑接口服务过期',
+      //   sql_code: 'update_interface_audit3',
+      //   id_code: '1251065911397527556'
+      // },
       {
         id: '1251047719744778244',
         sql_name: '编辑接口服务表',

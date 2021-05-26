@@ -6,13 +6,13 @@ API地址：api/build/database/executeSqls
  */
 
 // 固定参数
-const parameter = {
+export const parameter = {
   executeSqlList: [
     { sqlId: '5', parameters: { category_id: '1274971089329876994' } }
   ]
 }
 
-const result = {
+export const result = {
   code: 0,
   data: {
     table_0: [

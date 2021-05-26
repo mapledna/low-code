@@ -48,3 +48,11 @@ Vue.config.productionTip = false
 Vue.directive('allow', permission)
 // 自定义前端埋点指令,指令名record
 Vue.directive('record', record)
+
+
+/**
+ * mock
+ */
+const { mockXHR } = require('../../../mock')
+
+mockXHR()

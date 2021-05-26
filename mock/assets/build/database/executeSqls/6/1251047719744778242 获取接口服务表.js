@@ -5,13 +5,13 @@ api/build/database/executeSqls
 {"executeSqlList":[{"sqlId":"6","parameters":{"sqlId":"1251047719744778242"}}]}
 */
 
-const parameter = {
+export const parameter = {
   executeSqlList: [
     { sqlId: '6', parameters: { sqlId: '1251047719744778242' } }
   ]
 }
 
-const result = {
+export const result = {
   code: 0,
   data: {
     table_0: [

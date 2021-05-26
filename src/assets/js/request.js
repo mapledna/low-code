@@ -50,7 +50,6 @@ service.interceptors.response.use(
 
     let result = ''
     const { targetDataType } = res.config.headers
-
     if (res.config.url.indexOf('/oauth/oauth/token') > -1) { // 登录、刷新token 则直接返回错误对象
       return { code: res.data.code, data: res.data.data, message: res.data.message }
     }
