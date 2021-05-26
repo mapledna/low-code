@@ -1,0 +1,26 @@
+/* 复杂报表管理页面 */
+
+@import '@style/theme-base/utils';
+@import './full-panel';
+@import './menuTree';
+
+.formula-help {
+  .el-dialog__body {
+    min-height: 350px;
+  }
+  .code-panel {
+    padding: $--size-inline-block;
+    background: #f4f4f5;
+    border: $--border-base;
+  }
+  .code-bottom-panel {
+    min-height: 150px;
+    max-height: 350px;
+    height: calc(80vh - 150px - 90px);
+    margin-top: -1px; // 消除重复边距
+    overflow: hidden;
+  }
+  .el-collapse{
+    border-bottom: 0px;
+  }
+}

@@ -1,0 +1,34 @@
+.menu-tree {
+  .menu-tree_label {
+    position: relative;
+    width: 100%;
+  }
+
+  .menu-tree_btn-group {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 $--size-inline-block;
+  }
+
+  /* hover 时展示按钮 */
+  .menu-tree_btn-group {
+    display: none;
+  }
+  .menu-tree_label:hover .menu-tree_btn-group {
+    display: block;
+  }
+
+  /* 选中 */
+  .is-active {
+    &.menu-tree_label,
+    .menu-tree_label {
+      font-weight: bolder;
+      color: $--color-primary;
+    }
+    .menu-tree_btn-group {
+      font-size: 80%;
+      font-weight: normal;
+    }
+  }
+}

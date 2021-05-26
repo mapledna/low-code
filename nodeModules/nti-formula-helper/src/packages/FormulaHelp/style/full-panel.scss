@@ -1,0 +1,81 @@
+$full-panel-padding: $--size-inline-block !default;
+$full-panel_head-h: 40px !default;
+$full-panel_top-tool-h: $--input-small-height + 2 * $full-panel-padding !default; // input small + 上下 padding
+
+.full-panel {
+  position: relative;
+  height: 100%;
+  &_head {
+    box-sizing: border-box;
+    height: $full-panel_head-h;
+    line-height: $full-panel_head-h;
+    padding: 0 $full-panel-padding;
+    border-bottom: $--border-base;
+    overflow: hidden;
+    // *zoom: 1;
+    h3 {
+      // float: left;
+      // display: inline-block;
+      margin: 0;
+      // line-height: 20px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+  &_top-tool {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: $full-panel-padding;
+    background: $--color-white;
+
+    &_filter-bar {
+      display: inline-block;
+      width: 100%;
+      box-sizing: border-box;
+      margin-right: $full-panel-padding;
+    }
+
+    &_btn-group {
+      position: absolute;
+      top: $full-panel-padding;
+      right: $full-panel-padding;
+      bottom: $full-panel-padding;
+      line-height: $--input-small-height;
+
+      & > .el-button,
+      & > .el-dropdown {
+        margin-left: $--size-sm;
+        display: inline-block;
+        color: $--color-primary;
+      }
+    }
+  }
+  &_body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+    padding: $full-panel-padding;
+  }
+  // 顶部距离
+  &_head + &_top-tool {
+    top: $full-panel_head-h;
+  }
+  &_head + &_top-tool + &_body {
+    top: $full-panel_head-h + $full-panel_top-tool-h;
+  }
+  &_top-tool + &_body {
+    top: $full-panel_top-tool-h;
+  }
+}
+
+// HACK: 在弹窗中使用
+.el-dialog__body > .full-panel{
+  min-height: 250px; // NOTE: 设置高度，否则会塌陷。实际使用时建议自行设置实际高度。
+  margin: 0 - $full-panel-padding;
+}

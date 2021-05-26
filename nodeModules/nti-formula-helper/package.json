@@ -1,0 +1,91 @@
+{
+  "_from": "nti-formula-helper@^0.1.4",
+  "_id": "nti-formula-helper@0.1.4",
+  "_inBundle": false,
+  "_integrity": "sha512-8j9glD406UPtJgY3kvGjW+pQ9pfMVsDSwaJtLTdy2dxkvfauhrx7SK3OhfgvuTKuWNJkF7ESP/Oc7WjJgprTaw==",
+  "_location": "/nti-formula-helper",
+  "_phantomChildren": {
+    "async-validator": "1.8.5",
+    "babel-helper-vue-jsx-merge-props": "2.0.3",
+    "deepmerge": "1.5.2",
+    "follow-redirects": "1.10.0",
+    "normalize-wheel": "1.0.1",
+    "resize-observer-polyfill": "1.5.1"
+  },
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "nti-formula-helper@^0.1.4",
+    "name": "nti-formula-helper",
+    "escapedName": "nti-formula-helper",
+    "rawSpec": "^0.1.4",
+    "saveSpec": null,
+    "fetchSpec": "^0.1.4"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://10.1.21.4:8081/repository/npm-group/nti-formula-helper/-/nti-formula-helper-0.1.4.tgz",
+  "_shasum": "dbbf8f68a8f26ccd84e6272d9c0c259979df211d",
+  "_spec": "nti-formula-helper@^0.1.4",
+  "_where": "D:\\workspace\\nti-formgenerator-ft",
+  "author": {
+    "name": "chenjun",
+    "email": "chenjun_maple@qq.com"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "axios": "^0.21.0",
+    "core-js": "^3.6.5",
+    "crypto-js": "^4.0.0",
+    "element-ui": "^2.14.0",
+    "lodash": "^4.17.20",
+    "vue": "^2.6.11"
+  },
+  "deprecated": false,
+  "description": "公式编辑助手",
+  "devDependencies": {
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.2.1",
+    "@vue/babel-preset-jsx": "^1.2.4",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-component": "^1.1.1",
+    "babel-plugin-lodash": "^3.3.4",
+    "cross-env": "^7.0.2",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "lodash-webpack-plugin": "^0.11.6",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^10.1.0",
+    "vue-template-compiler": "^2.6.11",
+    "webpack-bundle-analyzer": "^4.3.0"
+  },
+  "files": [
+    "/src/example/*",
+    "/src/packages/*"
+  ],
+  "main": "/src/packages/FormulaHelp/install.js",
+  "name": "nti-formula-helper",
+  "private": false,
+  "publishConfig": {
+    "registry": "http://10.1.21.4:8081/repository/npm-hosted/"
+  },
+  "scripts": {
+    "build": "vue-cli-service build --mode build-prod",
+    "build-dev": "vue-cli-service build --mode build-dev",
+    "lib": "cross-env IS_LIB=1 vue-cli-service build --target lib --name nti-report --dest lib src/packages/index.js",
+    "lint": "vue-cli-service lint",
+    "serve": "vue-cli-service serve --mode dev"
+  },
+  "version": "0.1.4"
+}
